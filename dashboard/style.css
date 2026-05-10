@@ -1,0 +1,117 @@
+/* ── Layout helpers ─────────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Cards ──────────────────────────────────────────────────── */
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+
+/* ── Section titles ─────────────────────────────────────────── */
+.section-title {
+  font-size: .875rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ── Tab buttons ────────────────────────────────────────────── */
+.tab-btn {
+  padding: .75rem 1rem;
+  font-size: .8125rem;
+  font-weight: 500;
+  color: #6b7280;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: color .15s, border-color .15s;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+.tab-btn.active {
+  color: #111827;
+  border-bottom-color: #111827;
+}
+.tab-btn:hover:not(.active) { color: #374151; }
+
+/* ── Range buttons (30d / 90d / Tudo) ──────────────────────── */
+.range-btn {
+  font-size: .6875rem;
+  font-weight: 500;
+  padding: .2rem .55rem;
+  border-radius: .375rem;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  background: #fff;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.range-btn.active {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+/* ── Chart wrapper ──────────────────────────────────────────── */
+.chart-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+@media (min-width: 640px) {
+  .chart-wrap { height: 260px; }
+}
+
+/* ── Brand badge cards ──────────────────────────────────────── */
+.brand-badge {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.brand-badge-name {
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #6b7280;
+  margin-bottom: .5rem;
+}
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-top: .3rem;
+}
+.change-pill {
+  font-size: .75rem;
+  font-weight: 600;
+  padding: .15rem .5rem;
+  border-radius: 9999px;
+}
+.pill-up   { background: #fee2e2; color: #b91c1c; }
+.pill-down { background: #dcfce7; color: #15803d; }
+.pill-flat { background: #f3f4f6; color: #6b7280; }
+
+/* ── Subcat mini chart cards ────────────────────────────────── */
+.mini-card {
+  background: #fff;
+  border-radius: .875rem;
+  padding: .875rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.mini-card h3 {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: .5rem;
+}
+.mini-chart-wrap {
+  position: relative;
+  width: 100%;
+  height: 130px;
+}

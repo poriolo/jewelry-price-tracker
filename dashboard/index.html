@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor de Preços — Joias BR</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-10">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div>
+        <h1 class="text-base font-bold tracking-tight">Monitor de Preços — Joias BR</h1>
+        <p id="last-updated" class="text-xs text-gray-400">Carregando...</p>
+      </div>
+      <span id="status-dot" class="w-2 h-2 rounded-full bg-gray-300"></span>
+    </div>
+  </header>
+
+  <!-- Tab Navigation -->
+  <nav class="bg-white border-b sticky top-14 z-10">
+    <div class="max-w-4xl mx-auto px-4 flex gap-0 overflow-x-auto no-scrollbar">
+      <button data-tab="overview"     class="tab-btn active">Visão Geral</button>
+      <button data-tab="vivara"       class="tab-btn">Vivara</button>
+      <button data-tab="pandora"      class="tab-btn">Pandora</button>
+      <button data-tab="monte-carlo"  class="tab-btn">Monte Carlo</button>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-5">
+
+    <!-- ===== OVERVIEW TAB ===== -->
+    <section id="tab-overview" class="tab-panel space-y-5">
+
+      <!-- Price Index Chart -->
+      <div class="card">
+        <div class="flex items-center justify-between mb-1">
+          <h2 class="section-title">Índice de Preços (base 100)</h2>
+          <div class="flex gap-2">
+            <button class="range-btn active" data-days="30">30d</button>
+            <button class="range-btn" data-days="90">90d</button>
+            <button class="range-btn" data-days="0">Tudo</button>
+          </div>
+        </div>
+        <p class="text-xs text-gray-400 mb-3">Preço médio indexado ao primeiro dia de coleta. Acima de 100 = repasse de preço.</p>
+        <div class="chart-wrap"><canvas id="chart-index"></canvas></div>
+      </div>
+
+      <!-- Brand summary badges -->
+      <div id="brand-badges" class="grid grid-cols-1 gap-3"></div>
+
+    </section>
+
+    <!-- ===== VIVARA TAB ===== -->
+    <section id="tab-vivara" class="tab-panel hidden space-y-5">
+
+      <div class="card">
+        <h2 class="section-title mb-3">Ouro vs Prata — Preço Médio</h2>
+        <div class="chart-wrap"><canvas id="chart-vivara-material"></canvas></div>
+      </div>
+
+      <div id="vivara-subcats" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+
+    </section>
+
+    <!-- ===== PANDORA TAB ===== -->
+    <section id="tab-pandora" class="tab-panel hidden space-y-5">
+
+      <div class="card">
+        <h2 class="section-title mb-3">Pandora — Preço Médio por Categoria</h2>
+        <div class="chart-wrap"><canvas id="chart-pandora"></canvas></div>
+      </div>
+
+      <div id="pandora-badges" class="grid grid-cols-2 gap-3"></div>
+
+    </section>
+
+    <!-- ===== MONTE CARLO TAB ===== -->
+    <section id="tab-monte-carlo" class="tab-panel hidden space-y-5">
+
+      <div class="card">
+        <h2 class="section-title mb-3">Monte Carlo — Preço Médio por Categoria</h2>
+        <div class="chart-wrap"><canvas id="chart-monte-carlo"></canvas></div>
+      </div>
+
+      <div id="monte-carlo-badges" class="grid grid-cols-2 gap-3"></div>
+
+    </section>
+
+  </main>
+
+  <!-- Error overlay -->
+  <div id="error-overlay" class="hidden fixed inset-0 bg-gray-50 flex items-center justify-center z-50">
+    <div class="text-center px-8">
+      <p class="text-4xl mb-4">📡</p>
+      <p class="font-semibold text-gray-700">Dados ainda não disponíveis</p>
+      <p class="text-sm text-gray-400 mt-2">O scraper ainda não rodou. Acione o workflow no GitHub Actions e tente novamente.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
