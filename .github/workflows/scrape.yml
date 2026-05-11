@@ -39,7 +39,7 @@ jobs:
           key: playwright-chromium-${{ hashFiles('scraper/requirements.txt') }}
 
       - name: Install Playwright Chromium
-          run: |
+        run: |
             sudo apt-get install -y libasound2t64
             python -m playwright install --with-deps chromium
 
