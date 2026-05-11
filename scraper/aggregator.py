@@ -73,7 +73,7 @@ def append_daily_summary(date_str: str) -> None:
     SUMMARIES_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     if SUMMARIES_FILE.exists():
-        summaries = json.loads(SUMMARIES_FILE.read_text(encoding="utf-8"))
+        summaries = json.loads(SUMMARIES_FILE.read_text(encoding="utf-8-sig"))
     else:
         summaries = []
 
