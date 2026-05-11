@@ -40,8 +40,9 @@ jobs:
 
       - name: Install Playwright Chromium
         run: |
-            sudo apt-get install -y libasound2t64
-            python -m playwright install --with-deps chromium
+          sudo apt-get update
+          sudo apt-get install -y libasound2t64
+          python -m playwright install chromium
 
       - name: Run scraper
         working-directory: scraper
