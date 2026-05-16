@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T02:25:33.619324+00:00",
+  "generated_at": "2026-05-16T02:37:04.122555+00:00",
   "baseline_date": "2026-05-05",
   "dates": [
     "2026-05-05",
@@ -479,7 +479,7 @@
         null,
         null,
         null,
-        null
+        3911.72
       ],
       "index": [
         100.0,
@@ -492,7 +492,7 @@
         null,
         null,
         null,
-        null
+        2042.35
       ]
     },
     "monte_carlo_pulseiras": {
@@ -511,7 +511,7 @@
         null,
         null,
         null,
-        null
+        4962.27
       ],
       "index": [
         100.0,
@@ -524,7 +524,7 @@
         null,
         null,
         null,
-        null
+        3179.72
       ]
     },
     "monte_carlo_colares": {
@@ -543,7 +543,7 @@
         null,
         null,
         null,
-        null
+        1662.16
       ],
       "index": [
         100.0,
@@ -556,7 +556,7 @@
         null,
         null,
         null,
-        null
+        939.82
       ]
     },
     "monte_carlo_brincos": {
@@ -575,7 +575,7 @@
         null,
         null,
         null,
-        null
+        4644.75
       ],
       "index": [
         100.0,
@@ -588,7 +588,7 @@
         null,
         null,
         null,
-        null
+        3859.69
       ]
     }
   }
