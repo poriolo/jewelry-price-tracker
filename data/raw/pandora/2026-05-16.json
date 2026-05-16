@@ -1,6 +1,6 @@
 {
   "brand": "pandora",
-  "scraped_at": "2026-05-16T02:09:36.243254+00:00",
+  "scraped_at": "2026-05-16T02:18:21.331128+00:00",
   "products": [
     {
       "id": "pandora-moments-16919",
@@ -2143,16 +2143,6 @@
       "in_stock": true
     },
     {
-      "id": "pandora-moments-3684",
-      "name": "Charm Letra K",
-      "category": "moments",
-      "price": 259.0,
-      "original_price": 259.0,
-      "url": "https://www.pandorajoias.com.br/charm-letra-k/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "pandora-moments-3678",
       "name": "Charm Letra E",
       "category": "moments",
@@ -2499,6 +2489,16 @@
       "price": 669.0,
       "original_price": 669.0,
       "url": "https://www.pandorajoias.com.br/charm-prata-disney-malevola-brilha-no-escuro/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "pandora-moments-3684",
+      "name": "Charm Letra K",
+      "category": "moments",
+      "price": 259.0,
+      "original_price": 259.0,
+      "url": "https://www.pandorajoias.com.br/charm-letra-k/p",
       "material": null,
       "in_stock": true
     },
