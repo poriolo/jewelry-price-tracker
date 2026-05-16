@@ -6,7 +6,7 @@ from selectolax.parser import HTMLParser
 
 from base_scraper import BaseScraper
 
-BASE_URL = "https://www.montecarlo.com.br"
+BASE_URL = "https://www.montecarlojoias.com.br"
 
 # VTEX search API (available on many Brazilian e-commerce sites built on VTEX)
 VTEX_SEARCH_URL = f"{BASE_URL}/api/catalog_system/pub/products/search"
@@ -28,10 +28,10 @@ def _parse_brl(text: str) -> float | None:
 class MonteCarloScraper(BaseScraper):
     BRAND = "monte_carlo"
     CATEGORIES = {
-        "aneis": f"{BASE_URL}/aneis",
-        "pulseiras": f"{BASE_URL}/pulseiras",
-        "colares": f"{BASE_URL}/colares",
-        "brincos": f"{BASE_URL}/brincos",
+        "aneis": f"{BASE_URL}/joias/aneis",
+        "pulseiras": f"{BASE_URL}/joias/pulseiras",
+        "colares": f"{BASE_URL}/joias/colares",
+        "brincos": f"{BASE_URL}/joias/brincos",
     }
 
     # VTEX category tree IDs — filled after first manual inspection

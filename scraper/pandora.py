@@ -5,7 +5,7 @@ from selectolax.parser import HTMLParser
 
 from base_scraper import BaseScraper
 
-BASE_URL = "https://www.pandora.net/pt-br"
+BASE_URL = "https://www.pandorajoias.com.br"
 
 
 def _parse_brl(text: str) -> float | None:
@@ -24,11 +24,11 @@ def _parse_brl(text: str) -> float | None:
 class PandoraScraper(BaseScraper):
     BRAND = "pandora"
     CATEGORIES = {
-        "moments": f"{BASE_URL}/categorias/joias/chaveiros-berloque-pingente",
-        "pulseiras": f"{BASE_URL}/categorias/joias/pulseiras",
-        "colares": f"{BASE_URL}/categorias/joias/colares-e-pingentes",
-        "aneis": f"{BASE_URL}/categorias/joias/aneis",
-        "brincos": f"{BASE_URL}/categorias/joias/brincos",
+        "moments": f"{BASE_URL}/charms",
+        "pulseiras": f"{BASE_URL}/braceletes",
+        "colares": f"{BASE_URL}/colares",
+        "aneis": f"{BASE_URL}/aneis",
+        "brincos": f"{BASE_URL}/brinco",
     }
 
     async def go_to_next_page(self, page: Page, current_page: int) -> bool:
@@ -88,7 +88,7 @@ class PandoraScraper(BaseScraper):
 
             link_node = card.css_first("a[href]")
             href = link_node.attributes.get("href", "") if link_node else ""
-            url = href if href.startswith("http") else ("https://www.pandora.net" + href)
+            url = href if href.startswith("http") else (BASE_URL + href)
 
             products.append({
                 "id": f"pandora-{category}-{abs(hash(name + str(price))) % 10**8}",
