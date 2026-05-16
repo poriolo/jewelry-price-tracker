@@ -1,6 +1,6 @@
 {
   "brand": "vivara",
-  "scraped_at": "2026-05-16T02:17:05.739041+00:00",
+  "scraped_at": "2026-05-16T02:23:57.279841+00:00",
   "products": [
     {
       "id": "vivara-aneis-55342",
@@ -103,22 +103,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-aneis-39676",
-      "name": "Pulseira Life Infinito em Prata 925",
-      "category": "aneis",
-      "price": 550.0,
-      "original_price": 550.0,
-      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
-      "material": "prata",
-      "in_stock": true
-    },
-    {
       "id": "vivara-aneis-48690",
       "name": "Pulseira Life Estrela em Prata 925",
       "category": "aneis",
       "price": 550.0,
       "original_price": 550.0,
       "url": "https://www.vivara.com.br/pulseira-life-estrela-prata-pl00001652/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-39676",
+      "name": "Pulseira Life Infinito em Prata 925",
+      "category": "aneis",
+      "price": 550.0,
+      "original_price": 550.0,
+      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
       "material": "prata",
       "in_stock": true
     },
@@ -393,22 +393,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-aneis-56438",
-      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
-      "category": "aneis",
-      "price": 1050.0,
-      "original_price": 1050.0,
-      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "vivara-aneis-55790",
       "name": "Relógio Tommy Hilfiger Remy Masculino em Aço Prateado 1792229",
       "category": "aneis",
       "price": 990.0,
       "original_price": 990.0,
       "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-remy-masculino-em-aco-prateado-1792229-to00005116/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56438",
+      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
+      "category": "aneis",
+      "price": 1050.0,
+      "original_price": 1050.0,
+      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
       "material": null,
       "in_stock": true
     },
@@ -603,22 +603,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-pulseiras-39676",
-      "name": "Pulseira Life Infinito em Prata 925",
-      "category": "pulseiras",
-      "price": 550.0,
-      "original_price": 550.0,
-      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
-      "material": "prata",
-      "in_stock": true
-    },
-    {
       "id": "vivara-pulseiras-48690",
       "name": "Pulseira Life Estrela em Prata 925",
       "category": "pulseiras",
       "price": 550.0,
       "original_price": 550.0,
       "url": "https://www.vivara.com.br/pulseira-life-estrela-prata-pl00001652/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-39676",
+      "name": "Pulseira Life Infinito em Prata 925",
+      "category": "pulseiras",
+      "price": 550.0,
+      "original_price": 550.0,
+      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
       "material": "prata",
       "in_stock": true
     },
@@ -893,22 +893,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-pulseiras-56438",
-      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
-      "category": "pulseiras",
-      "price": 1050.0,
-      "original_price": 1050.0,
-      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "vivara-pulseiras-55790",
       "name": "Relógio Tommy Hilfiger Remy Masculino em Aço Prateado 1792229",
       "category": "pulseiras",
       "price": 990.0,
       "original_price": 990.0,
       "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-remy-masculino-em-aco-prateado-1792229-to00005116/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-56438",
+      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
+      "category": "pulseiras",
+      "price": 1050.0,
+      "original_price": 1050.0,
+      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
       "material": null,
       "in_stock": true
     },
@@ -1103,22 +1103,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-colares_pingentes-39676",
-      "name": "Pulseira Life Infinito em Prata 925",
-      "category": "colares_pingentes",
-      "price": 550.0,
-      "original_price": 550.0,
-      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
-      "material": "prata",
-      "in_stock": true
-    },
-    {
       "id": "vivara-colares_pingentes-48690",
       "name": "Pulseira Life Estrela em Prata 925",
       "category": "colares_pingentes",
       "price": 550.0,
       "original_price": 550.0,
       "url": "https://www.vivara.com.br/pulseira-life-estrela-prata-pl00001652/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-39676",
+      "name": "Pulseira Life Infinito em Prata 925",
+      "category": "colares_pingentes",
+      "price": 550.0,
+      "original_price": 550.0,
+      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
       "material": "prata",
       "in_stock": true
     },
@@ -1393,22 +1393,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-colares_pingentes-56438",
-      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
-      "category": "colares_pingentes",
-      "price": 1050.0,
-      "original_price": 1050.0,
-      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "vivara-colares_pingentes-55790",
       "name": "Relógio Tommy Hilfiger Remy Masculino em Aço Prateado 1792229",
       "category": "colares_pingentes",
       "price": 990.0,
       "original_price": 990.0,
       "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-remy-masculino-em-aco-prateado-1792229-to00005116/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-56438",
+      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
+      "category": "colares_pingentes",
+      "price": 1050.0,
+      "original_price": 1050.0,
+      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
       "material": null,
       "in_stock": true
     },
@@ -1603,22 +1603,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-brincos-39676",
-      "name": "Pulseira Life Infinito em Prata 925",
-      "category": "brincos",
-      "price": 550.0,
-      "original_price": 550.0,
-      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
-      "material": "prata",
-      "in_stock": true
-    },
-    {
       "id": "vivara-brincos-48690",
       "name": "Pulseira Life Estrela em Prata 925",
       "category": "brincos",
       "price": 550.0,
       "original_price": 550.0,
       "url": "https://www.vivara.com.br/pulseira-life-estrela-prata-pl00001652/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-39676",
+      "name": "Pulseira Life Infinito em Prata 925",
+      "category": "brincos",
+      "price": 550.0,
+      "original_price": 550.0,
+      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
       "material": "prata",
       "in_stock": true
     },
@@ -1893,22 +1893,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-brincos-56438",
-      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
-      "category": "brincos",
-      "price": 1050.0,
-      "original_price": 1050.0,
-      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "vivara-brincos-55790",
       "name": "Relógio Tommy Hilfiger Remy Masculino em Aço Prateado 1792229",
       "category": "brincos",
       "price": 990.0,
       "original_price": 990.0,
       "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-remy-masculino-em-aco-prateado-1792229-to00005116/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-56438",
+      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
+      "category": "brincos",
+      "price": 1050.0,
+      "original_price": 1050.0,
+      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
       "material": null,
       "in_stock": true
     },
@@ -2103,22 +2103,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-relogios-39676",
-      "name": "Pulseira Life Infinito em Prata 925",
-      "category": "relogios",
-      "price": 550.0,
-      "original_price": 550.0,
-      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
-      "material": "prata",
-      "in_stock": true
-    },
-    {
       "id": "vivara-relogios-48690",
       "name": "Pulseira Life Estrela em Prata 925",
       "category": "relogios",
       "price": 550.0,
       "original_price": 550.0,
       "url": "https://www.vivara.com.br/pulseira-life-estrela-prata-pl00001652/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-39676",
+      "name": "Pulseira Life Infinito em Prata 925",
+      "category": "relogios",
+      "price": 550.0,
+      "original_price": 550.0,
+      "url": "https://www.vivara.com.br/pulseira-life-infinito-em-prata-925-pl00000995/p",
       "material": "prata",
       "in_stock": true
     },
@@ -2393,22 +2393,22 @@
       "in_stock": true
     },
     {
-      "id": "vivara-relogios-56438",
-      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
-      "category": "relogios",
-      "price": 1050.0,
-      "original_price": 1050.0,
-      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "vivara-relogios-55790",
       "name": "Relógio Tommy Hilfiger Remy Masculino em Aço Prateado 1792229",
       "category": "relogios",
       "price": 990.0,
       "original_price": 990.0,
       "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-remy-masculino-em-aco-prateado-1792229-to00005116/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-56438",
+      "name": "Relógio Olivia Burton Mini Grosvenor Feminino em Aço Prateado e Dourado 24000365",
+      "category": "relogios",
+      "price": 1050.0,
+      "original_price": 1050.0,
+      "url": "https://www.vivara.com.br/relogio-olivia-burton-mini-grosvenor-feminino-em-aco-prateado-e-dourado-24000365-ob00000559/p",
       "material": null,
       "in_stock": true
     },
