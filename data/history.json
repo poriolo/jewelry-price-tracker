@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T02:49:56.629806+00:00",
+  "generated_at": "2026-05-16T03:05:10.378743+00:00",
   "baseline_date": "2026-05-16",
   "dates": [
     "2026-05-16"
@@ -11,7 +11,7 @@
       "category": "aneis",
       "material": "ouro",
       "prices": [
-        2241.88
+        2247.5
       ],
       "index": [
         100.0
@@ -23,7 +23,7 @@
       "category": "aneis",
       "material": "prata",
       "prices": [
-        463.0
+        398.57
       ],
       "index": [
         100.0
@@ -35,7 +35,7 @@
       "category": "pulseiras",
       "material": "ouro",
       "prices": [
-        2241.88
+        5748.0
       ],
       "index": [
         100.0
@@ -47,7 +47,7 @@
       "category": "pulseiras",
       "material": "prata",
       "prices": [
-        463.0
+        562.0
       ],
       "index": [
         100.0
@@ -59,7 +59,7 @@
       "category": "colares_pingentes",
       "material": "ouro",
       "prices": [
-        2241.88
+        9452.5
       ],
       "index": [
         100.0
@@ -71,7 +71,7 @@
       "category": "colares_pingentes",
       "material": "prata",
       "prices": [
-        463.0
+        497.5
       ],
       "index": [
         100.0
@@ -83,7 +83,7 @@
       "category": "brincos",
       "material": "ouro",
       "prices": [
-        2241.88
+        6150.0
       ],
       "index": [
         100.0
@@ -95,7 +95,7 @@
       "category": "brincos",
       "material": "prata",
       "prices": [
-        463.0
+        417.5
       ],
       "index": [
         100.0
