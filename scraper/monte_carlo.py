@@ -69,7 +69,12 @@ async def _fetch_page(client: httpx.AsyncClient, category_slug: str, page: int) 
     )
     print(f"[monte_carlo] GET {url} page={page} → {resp.status_code}")
     resp.raise_for_status()
-    data = resp.json()
+    # Monte Carlo retorna encoding não-UTF8 — decodifica manualmente
+    try:
+        data = resp.json()
+    except (UnicodeDecodeError, Exception):
+        import json as _json
+        data = _json.loads(resp.content.decode("latin-1", errors="replace"))
     if isinstance(data, dict):
         print(f"[monte_carlo] keys: {list(data.keys())}, products: {len(data.get('products', []))}")
     return data
