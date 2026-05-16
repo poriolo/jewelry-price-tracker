@@ -2,36 +2,42 @@ import asyncio
 import os
 import sys
 from datetime import datetime, timezone
+from pathlib import Path
 
-from playwright.async_api import async_playwright
-
-# allow running from repo root or scraper/ directory
-sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent))
 
 from aggregator import append_daily_summary, rebuild_history
-from vivara import VivaraScraper
-from pandora import PandoraScraper
-from monte_carlo import MonteCarloScraper
-
-SCRAPERS = [VivaraScraper, PandoraScraper, MonteCarloScraper]
+import vivara
+import pandora
+import monte_carlo
 
 
 async def run(date_str: str) -> None:
-    async with async_playwright() as pw:
-        browser = await pw.chromium.launch(headless=True)
+    scrapers = [
+        ("vivara",      vivara.scrape_all),
+        ("pandora",     pandora.scrape_all),
+        ("monte_carlo", monte_carlo.scrape_all),
+    ]
+
+    for brand, scrape_fn in scrapers:
+        print(f"\n{'='*50}\nStarting {brand}\n{'='*50}")
         try:
-            for ScraperClass in SCRAPERS:
-                scraper = ScraperClass(browser)
-                print(f"\n{'='*50}")
-                print(f"Starting {scraper.BRAND}")
-                print(f"{'='*50}")
-                try:
-                    products = await scraper.scrape_all()
-                    scraper.save_raw(products, date_str)
-                except Exception as e:
-                    print(f"[main] FATAL error for {scraper.BRAND}: {e}")
-        finally:
-            await browser.close()
+            products = await scrape_fn()
+            # save raw file
+            import json
+            out_dir = Path(__file__).parent.parent / "data" / "raw" / brand
+            out_dir.mkdir(parents=True, exist_ok=True)
+            out_file = out_dir / f"{date_str}.json"
+            out_file.write_text(
+                json.dumps(
+                    {"brand": brand, "scraped_at": datetime.now(timezone.utc).isoformat(), "products": products},
+                    ensure_ascii=False, indent=2,
+                ),
+                encoding="utf-8",
+            )
+            print(f"[{brand}] saved {len(products)} products")
+        except Exception as e:
+            print(f"[main] FATAL error for {brand}: {e}")
 
     print("\n[main] computing aggregates...")
     append_daily_summary(date_str)

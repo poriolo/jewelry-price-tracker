@@ -1,138 +1,120 @@
-import re
+"""
+Vivara scraper — usa VTEX Intelligent Search API (sem Playwright).
+Endpoint: /_v/api/intelligent-search/product_search/{category}?count=50&page=N&locale=pt-BR
+"""
+import asyncio
+import random
 
-from playwright.async_api import Page
-from selectolax.parser import HTMLParser
+import httpx
+from tenacity import retry, stop_after_attempt, wait_exponential
 
-from base_scraper import BaseScraper
 from material_detector import detect_material
 
 BASE_URL = "https://www.vivara.com.br"
+SEARCH_URL = f"{BASE_URL}/_v/api/intelligent-search/product_search"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "application/json",
+    "Accept-Language": "pt-BR,pt;q=0.9",
+    "Referer": BASE_URL,
+}
+
+BRAND = "vivara"
+
+CATEGORIES = {
+    "aneis":             "aneis",
+    "pulseiras":         "pulseiras",
+    "colares_pingentes": "colares-e-pingentes",
+    "brincos":           "brincos",
+    "relogios":          "relogios",
+}
 
 
-def _parse_price(text: str) -> float | None:
-    text = text.strip().replace("\xa0", " ")
-    m = re.search(r"[\d.,]+", text.replace(".", "").replace(",", "."))
-    if not m:
-        return None
-    # handle "1.299,00" format
-    clean = re.sub(r"[^\d,.]", "", text)
-    clean = clean.replace(".", "").replace(",", ".")
+def _parse_price(item: dict) -> tuple[float | None, float | None]:
     try:
-        return float(clean)
-    except ValueError:
-        return None
-
-
-def _parse_brl(text: str) -> float | None:
-    if not text:
-        return None
-    # "R$ 1.299,00" → 1299.0
-    clean = re.sub(r"[^\d,]", "", text)
-    if not clean:
-        return None
-    clean = clean.replace(",", ".")
-    # if there are multiple dots, keep only last as decimal
-    parts = clean.split(".")
-    if len(parts) > 2:
-        clean = "".join(parts[:-1]) + "." + parts[-1]
+        price_range = item.get("priceRange", {})
+        price = price_range.get("sellingPrice", {}).get("lowPrice")
+        list_price = price_range.get("listPrice", {}).get("lowPrice")
+        if price:
+            return float(price), float(list_price) if list_price else None
+    except Exception:
+        pass
     try:
-        return float(clean)
-    except ValueError:
-        return None
+        offer = item["items"][0]["sellers"][0]["commertialOffer"]
+        price = offer.get("Price")
+        list_price = offer.get("ListPrice")
+        if price:
+            return float(price), float(list_price) if list_price else None
+    except Exception:
+        pass
+    return None, None
 
 
-class VivaraScraper(BaseScraper):
-    BRAND = "vivara"
-    CATEGORIES = {
-        "aneis": f"{BASE_URL}/aneis",
-        "pulseiras": f"{BASE_URL}/pulseiras",
-        "colares_pingentes": f"{BASE_URL}/colares-e-pingentes",
-        "brincos": f"{BASE_URL}/brincos",
-        "relogios": f"{BASE_URL}/relogios",
-    }
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(min=5, max=20))
+async def _fetch_page(client: httpx.AsyncClient, category_slug: str, page: int) -> dict:
+    await asyncio.sleep(random.uniform(1.0, 3.0))
+    resp = await client.get(
+        f"{SEARCH_URL}/{category_slug}",
+        params={"count": 50, "page": page, "locale": "pt-BR"},
+        timeout=20,
+    )
+    resp.raise_for_status()
+    return resp.json()
 
-    async def go_to_next_page(self, page: Page, current_page: int) -> bool:
-        # Try "Ver mais" / load-more button
-        load_more = page.locator(
-            "button:has-text('Ver mais'), button:has-text('Carregar mais'), [data-testid='load-more']"
-        ).first
+
+async def scrape_category(client: httpx.AsyncClient, cat_key: str, cat_slug: str) -> list[dict]:
+    products = []
+    page = 1
+
+    while True:
         try:
-            if await load_more.is_visible(timeout=3_000):
-                prev_count = await page.locator("[class*='product-card'], [class*='ProductCard']").count()
-                await load_more.click()
-                await page.wait_for_function(
-                    f"document.querySelectorAll(\"[class*='product-card'], [class*='ProductCard']\").length > {prev_count}",
-                    timeout=10_000,
-                )
-                return True
-        except Exception:
-            pass
+            data = await _fetch_page(client, cat_slug, page)
+        except Exception as e:
+            print(f"[vivara] ERROR page {page} of {cat_key}: {e}")
+            break
 
-        # Try numbered pagination — click next page number
-        next_btn = page.locator("a[aria-label='Próxima página'], a[aria-label='Next'], .pagination-next").first
-        try:
-            if await next_btn.is_visible(timeout=2_000):
-                await next_btn.click()
-                await page.wait_for_load_state("networkidle", timeout=15_000)
-                return True
-        except Exception:
-            pass
+        items = data.get("products", [])
+        if not items:
+            break
 
-        return False
-
-    async def parse_products(self, html: str, category: str) -> list[dict]:
-        tree = HTMLParser(html)
-        products = []
-
-        # Vivara product cards — selectors may need updating if site redesigns
-        cards = (
-            tree.css("[class*='ProductCard']")
-            or tree.css("[class*='product-card']")
-            or tree.css("[data-testid*='product']")
-            or tree.css("article")
-        )
-
-        for card in cards:
-            name_node = (
-                card.css_first("[class*='ProductName'], [class*='product-name'], h2, h3")
-            )
-            if not name_node:
+        for item in items:
+            name = item.get("productName", "")
+            price, original_price = _parse_price(item)
+            if not price:
                 continue
-            name = name_node.text(strip=True)
-            if not name:
-                continue
-
-            # price — prefer sale price, fall back to original
-            price_node = card.css_first(
-                "[class*='price-sale'], [class*='PriceSale'], "
-                "[class*='price-final'], [class*='BestPrice'], "
-                "[class*='price']:not([class*='original']):not([class*='list'])"
-            )
-            original_node = card.css_first(
-                "[class*='price-original'], [class*='PriceOriginal'], "
-                "[class*='price-list'], [class*='ListPrice']"
-            )
-
-            price = _parse_brl(price_node.text(strip=True)) if price_node else None
-            original_price = _parse_brl(original_node.text(strip=True)) if original_node else None
-
-            if price is None:
-                continue
-
-            link_node = card.css_first("a[href]")
-            url = (BASE_URL + link_node.attributes.get("href", "")) if link_node else None
-
-            material = detect_material(name)
-
+            link = item.get("link", "")
+            url = BASE_URL + link if link.startswith("/") else link
             products.append({
-                "id": f"vivara-{category}-{abs(hash(name + str(price))) % 10**8}",
+                "id": f"vivara-{cat_key}-{item.get('productId', abs(hash(name)))}",
                 "name": name,
-                "category": category,
+                "category": cat_key,
                 "price": price,
                 "original_price": original_price,
                 "url": url,
-                "material": material,
+                "material": detect_material(name),
                 "in_stock": True,
             })
 
-        return products
+        pagination = data.get("pagination", {})
+        total = pagination.get("count", 0)
+        if page * 50 >= total or len(items) < 50:
+            break
+        page += 1
+
+    print(f"[vivara] {cat_key}: {len(products)} produtos")
+    if len(products) < 3:
+        print(f"[vivara] WARNING: poucos produtos em {cat_key}")
+    return products
+
+
+async def scrape_all() -> list[dict]:
+    all_products = []
+    async with httpx.AsyncClient(headers=HEADERS, follow_redirects=True) as client:
+        for cat_key, cat_slug in CATEGORIES.items():
+            try:
+                products = await scrape_category(client, cat_key, cat_slug)
+                all_products.extend(products)
+            except Exception as e:
+                print(f"[vivara] FATAL {cat_key}: {e}")
+    return all_products

@@ -1,167 +1,91 @@
-import re
+"""
+Monte Carlo scraper — usa VTEX Intelligent Search API.
+Endpoint: /_v/api/intelligent-search/product_search/{category}?count=50&page=N&locale=pt-BR
+"""
+import asyncio
+import random
 
 import httpx
-from playwright.async_api import Browser, Page
-from selectolax.parser import HTMLParser
+from tenacity import retry, stop_after_attempt, wait_exponential
 
-from base_scraper import BaseScraper
+BASE_URL = "https://www.montecarlo.com.br"
+SEARCH_URL = f"{BASE_URL}/_v/api/intelligent-search/product_search"
 
-BASE_URL = "https://www.montecarlojoias.com.br"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "application/json",
+    "Accept-Language": "pt-BR,pt;q=0.9",
+    "Referer": BASE_URL,
+}
 
-# VTEX search API (available on many Brazilian e-commerce sites built on VTEX)
-VTEX_SEARCH_URL = f"{BASE_URL}/api/catalog_system/pub/products/search"
+BRAND = "monte_carlo"
+
+CATEGORIES = {
+    "aneis":     "joias/aneis",
+    "pulseiras": "joias/pulseiras",
+    "colares":   "joias/colares",
+    "brincos":   "joias/brincos",
+}
 
 
-def _parse_brl(text: str) -> float | None:
-    if not text:
-        return None
-    clean = re.sub(r"[^\d,]", "", text).replace(",", ".")
-    parts = clean.split(".")
-    if len(parts) > 2:
-        clean = "".join(parts[:-1]) + "." + parts[-1]
+def _parse_price(item: dict) -> tuple[float | None, float | None]:
     try:
-        return float(clean)
-    except ValueError:
-        return None
+        price_range = item.get("priceRange", {})
+        price = price_range.get("sellingPrice", {}).get("lowPrice")
+        list_price = price_range.get("listPrice", {}).get("lowPrice")
+        if price:
+            return float(price), float(list_price) if list_price else None
+    except Exception:
+        pass
+    try:
+        offer = item["items"][0]["sellers"][0]["commertialOffer"]
+        price = offer.get("Price")
+        list_price = offer.get("ListPrice")
+        if price:
+            return float(price), float(list_price) if list_price else None
+    except Exception:
+        pass
+    return None, None
 
 
-class MonteCarloScraper(BaseScraper):
-    BRAND = "monte_carlo"
-    CATEGORIES = {
-        "aneis": f"{BASE_URL}/joias/aneis",
-        "pulseiras": f"{BASE_URL}/joias/pulseiras",
-        "colares": f"{BASE_URL}/joias/colares",
-        "brincos": f"{BASE_URL}/joias/brincos",
-    }
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(min=5, max=20))
+async def _fetch_page(client: httpx.AsyncClient, category_slug: str, page: int) -> dict:
+    await asyncio.sleep(random.uniform(1.0, 3.0))
+    resp = await client.get(
+        f"{SEARCH_URL}/{category_slug}",
+        params={"count": 50, "page": page, "locale": "pt-BR"},
+        timeout=20,
+    )
+    resp.raise_for_status()
+    return resp.json()
 
-    # VTEX category tree IDs — filled after first manual inspection
-    VTEX_CATEGORY_IDS: dict[str, str] = {}
 
-    async def scrape_category(self, category_key: str, url: str) -> list[dict]:
-        # Try VTEX API first (faster, no JS rendering needed)
-        vtex_products = await self._try_vtex_api(category_key)
-        if vtex_products:
-            return vtex_products
-        # Fall back to browser scraping
-        return await super().scrape_category(category_key, url)
+async def scrape_category(client: httpx.AsyncClient, cat_key: str, cat_slug: str) -> list[dict]:
+    products = []
+    page = 1
 
-    async def _try_vtex_api(self, category_key: str) -> list[dict]:
-        """
-        VTEX exposes a public search API. Try fetching paginated JSON.
-        Pattern: /api/catalog_system/pub/products/search?fq=C:/{cat_id}/&_from=0&_to=49
-        If the site is not on VTEX, this will 404 and we fall back gracefully.
-        """
-        products = []
-        page_size = 50
-        offset = 0
-        category_path = category_key.replace("_", "-")
-
-        async with httpx.AsyncClient(timeout=15, headers={"Accept": "application/json"}) as client:
-            while True:
-                try:
-                    resp = await client.get(
-                        VTEX_SEARCH_URL,
-                        params={
-                            "fq": f"specificationFilter_1:{category_path}",
-                            "_from": offset,
-                            "_to": offset + page_size - 1,
-                        },
-                    )
-                    if resp.status_code != 200:
-                        return []
-                    items = resp.json()
-                    if not items:
-                        break
-                    for item in items:
-                        name = item.get("productName", "")
-                        price = None
-                        original_price = None
-                        try:
-                            sku = item["items"][0]
-                            seller = sku["sellers"][0]["commertialOffer"]
-                            price = seller.get("Price")
-                            original_price = seller.get("ListPrice")
-                            in_stock = seller.get("AvailableQuantity", 0) > 0
-                        except (KeyError, IndexError):
-                            in_stock = True
-
-                        if not price:
-                            continue
-
-                        products.append({
-                            "id": f"monte_carlo-{category_key}-{item.get('productId', abs(hash(name)))}",
-                            "name": name,
-                            "category": category_key,
-                            "price": float(price),
-                            "original_price": float(original_price) if original_price else None,
-                            "url": f"{BASE_URL}/{item.get('linkText', '')}/p",
-                            "material": None,
-                            "in_stock": in_stock,
-                        })
-
-                    offset += page_size
-                    if len(items) < page_size:
-                        break
-                except Exception:
-                    return []
-
-        return products
-
-    async def go_to_next_page(self, page: Page, current_page: int) -> bool:
-        next_btn = page.locator(
-            "a[aria-label='Próxima página'], .pagination__next, a:has-text('Próximo')"
-        ).first
+    while True:
         try:
-            if await next_btn.is_visible(timeout=2_000):
-                await next_btn.click()
-                await page.wait_for_load_state("networkidle", timeout=15_000)
-                return True
-        except Exception:
-            pass
-        return False
+            data = await _fetch_page(client, cat_slug, page)
+        except Exception as e:
+            print(f"[monte_carlo] ERROR page {page} of {cat_key}: {e}")
+            break
 
-    async def parse_products(self, html: str, category: str) -> list[dict]:
-        tree = HTMLParser(html)
-        products = []
+        items = data.get("products", [])
+        if not items:
+            break
 
-        cards = (
-            tree.css("[class*='product-item'], [class*='ProductItem']")
-            or tree.css("[class*='product-card'], [class*='ProductCard']")
-            or tree.css("article")
-        )
-
-        for card in cards:
-            name_node = card.css_first(
-                "[class*='product-name'], [class*='ProductName'], h2, h3"
-            )
-            if not name_node:
+        for item in items:
+            name = item.get("productName", "")
+            price, original_price = _parse_price(item)
+            if not price:
                 continue
-            name = name_node.text(strip=True)
-            if not name:
-                continue
-
-            price_node = card.css_first(
-                "[class*='best-price'], [class*='BestPrice'], "
-                "[class*='price-sale'], [class*='sale-price']"
-            )
-            original_node = card.css_first(
-                "[class*='list-price'], [class*='ListPrice'], [class*='price-original']"
-            )
-
-            price = _parse_brl(price_node.text(strip=True)) if price_node else None
-            original_price = _parse_brl(original_node.text(strip=True)) if original_node else None
-
-            if price is None:
-                continue
-
-            link_node = card.css_first("a[href]")
-            href = link_node.attributes.get("href", "") if link_node else ""
-            url = href if href.startswith("http") else (BASE_URL + href)
-
+            link = item.get("link", "")
+            url = BASE_URL + link if link.startswith("/") else link
             products.append({
-                "id": f"monte_carlo-{category}-{abs(hash(name + str(price))) % 10**8}",
+                "id": f"monte_carlo-{cat_key}-{item.get('productId', abs(hash(name)))}",
                 "name": name,
-                "category": category,
+                "category": cat_key,
                 "price": price,
                 "original_price": original_price,
                 "url": url,
@@ -169,4 +93,25 @@ class MonteCarloScraper(BaseScraper):
                 "in_stock": True,
             })
 
-        return products
+        pagination = data.get("pagination", {})
+        total = pagination.get("count", 0)
+        if page * 50 >= total or len(items) < 50:
+            break
+        page += 1
+
+    print(f"[monte_carlo] {cat_key}: {len(products)} produtos")
+    if len(products) < 3:
+        print(f"[monte_carlo] WARNING: poucos produtos em {cat_key}")
+    return products
+
+
+async def scrape_all() -> list[dict]:
+    all_products = []
+    async with httpx.AsyncClient(headers=HEADERS, follow_redirects=True) as client:
+        for cat_key, cat_slug in CATEGORIES.items():
+            try:
+                products = await scrape_category(client, cat_key, cat_slug)
+                all_products.extend(products)
+            except Exception as e:
+                print(f"[monte_carlo] FATAL {cat_key}: {e}")
+    return all_products
