@@ -10,7 +10,7 @@ import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 BASE_URL = "https://www.montecarlo.com.br"
-SEARCH_URL = f"{BASE_URL}/api/catalog_system/pub/products/search"
+SEARCH_BASE = f"{BASE_URL}/api/catalog_system/pub/products/search"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -22,11 +22,12 @@ HEADERS = {
 
 BRAND = "monte_carlo"
 
-CATEGORY_IDS = {
-    "aneis":     3,
-    "brincos":   4,
-    "colares":   5,
-    "pulseiras": 8,
+# Usa path-based search (dept/categoria) — fq=C:id não funciona para subcategorias
+CATEGORIES = {
+    "aneis":     "joias/aneis",
+    "brincos":   "joias/brincos",
+    "colares":   "joias/colares",
+    "pulseiras": "joias/pulseiras",
 }
 
 
@@ -52,28 +53,29 @@ def _parse_price(item: dict) -> tuple[float | None, float | None]:
 
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=5, max=20))
-async def _fetch_page(client: httpx.AsyncClient, cat_id: int, offset: int) -> list:
+async def _fetch_page(client: httpx.AsyncClient, cat_path: str, offset: int) -> list:
     await asyncio.sleep(random.uniform(1.5, 3.0))
+    url = f"{SEARCH_BASE}/{cat_path}"
     resp = await client.get(
-        SEARCH_URL,
-        params={"fq": f"C:{cat_id}", "_from": offset, "_to": offset + 49},
-        headers={**HEADERS, "Referer": BASE_URL},
+        url,
+        params={"_from": offset, "_to": offset + 49},
+        headers={**HEADERS, "Referer": f"{BASE_URL}/{cat_path}"},
         timeout=20,
     )
-    print(f"[monte_carlo] GET catalog fq=C:{cat_id} offset={offset} → {resp.status_code}")
+    print(f"[monte_carlo] GET {cat_path} offset={offset} → {resp.status_code}")
     resp.raise_for_status()
     data = resp.json()
     print(f"[monte_carlo] response type={type(data).__name__}, len={len(data) if isinstance(data, list) else 'n/a'}")
     return data if isinstance(data, list) else []
 
 
-async def scrape_category(client: httpx.AsyncClient, cat_key: str, cat_id: int) -> list[dict]:
+async def scrape_category(client: httpx.AsyncClient, cat_key: str, cat_path: str) -> list[dict]:
     products = []
     offset = 0
 
     while True:
         try:
-            items = await _fetch_page(client, cat_id, offset)
+            items = await _fetch_page(client, cat_path, offset)
         except Exception as e:
             print(f"[monte_carlo] ERROR offset {offset} of {cat_key}: {e}")
             break
@@ -113,9 +115,9 @@ async def scrape_all() -> list[dict]:
     all_products = []
     async with httpx.AsyncClient(follow_redirects=True, cookies=httpx.Cookies()) as client:
         await _init_session(client)
-        for cat_key, cat_id in CATEGORY_IDS.items():
+        for cat_key, cat_path in CATEGORIES.items():
             try:
-                products = await scrape_category(client, cat_key, cat_id)
+                products = await scrape_category(client, cat_key, cat_path)
                 all_products.extend(products)
             except Exception as e:
                 print(f"[monte_carlo] FATAL {cat_key}: {e}")
