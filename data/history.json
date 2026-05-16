@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T01:49:53.882321+00:00",
+  "generated_at": "2026-05-16T02:02:51.567343+00:00",
   "baseline_date": "2026-05-05",
   "dates": [
     "2026-05-05",
@@ -31,7 +31,7 @@
         null,
         null,
         null,
-        null
+        2241.88
       ],
       "index": [
         100.0,
@@ -44,7 +44,7 @@
         null,
         null,
         null,
-        null
+        65.57
       ]
     },
     "vivara_aneis_prata": {
@@ -63,7 +63,7 @@
         null,
         null,
         null,
-        null
+        463.0
       ],
       "index": [
         100.0,
@@ -76,7 +76,7 @@
         null,
         null,
         null,
-        null
+        93.29
       ]
     },
     "vivara_pulseiras_ouro": {
@@ -95,7 +95,7 @@
         null,
         null,
         null,
-        null
+        2241.88
       ],
       "index": [
         100.0,
@@ -108,7 +108,7 @@
         null,
         null,
         null,
-        null
+        112.46
       ]
     },
     "vivara_pulseiras_prata": {
@@ -127,7 +127,7 @@
         null,
         null,
         null,
-        null
+        463.0
       ],
       "index": [
         100.0,
@@ -140,7 +140,7 @@
         null,
         null,
         null,
-        null
+        115.86
       ]
     },
     "vivara_colares_ouro": {
@@ -159,7 +159,7 @@
         null,
         null,
         null,
-        null
+        2241.88
       ],
       "index": [
         100.0,
@@ -172,7 +172,7 @@
         null,
         null,
         null,
-        null
+        96.15
       ]
     },
     "vivara_colares_prata": {
@@ -191,7 +191,7 @@
         null,
         null,
         null,
-        null
+        463.0
       ],
       "index": [
         100.0,
@@ -204,7 +204,7 @@
         null,
         null,
         null,
-        null
+        86.68
       ]
     },
     "vivara_brincos_ouro": {
@@ -223,7 +223,7 @@
         null,
         null,
         null,
-        null
+        2241.88
       ],
       "index": [
         100.0,
@@ -236,7 +236,7 @@
         null,
         null,
         null,
-        null
+        215.3
       ]
     },
     "vivara_brincos_prata": {
@@ -255,7 +255,7 @@
         null,
         null,
         null,
-        null
+        463.0
       ],
       "index": [
         100.0,
@@ -268,7 +268,7 @@
         null,
         null,
         null,
-        null
+        144.31
       ]
     },
     "vivara_relogios": {
@@ -319,7 +319,7 @@
         null,
         null,
         null,
-        null
+        487.43
       ],
       "index": [
         100.0,
@@ -332,7 +332,7 @@
         null,
         null,
         null,
-        null
+        174.0
       ]
     },
     "pandora_pulseiras": {
@@ -351,7 +351,7 @@
         null,
         null,
         null,
-        null
+        938.28
       ],
       "index": [
         100.0,
@@ -364,7 +364,7 @@
         null,
         null,
         null,
-        null
+        176.98
       ]
     },
     "pandora_colares": {
@@ -383,7 +383,7 @@
         null,
         null,
         null,
-        null
+        996.22
       ],
       "index": [
         100.0,
@@ -396,7 +396,7 @@
         null,
         null,
         null,
-        null
+        213.32
       ]
     },
     "pandora_aneis": {
@@ -415,7 +415,7 @@
         null,
         null,
         null,
-        null
+        667.18
       ],
       "index": [
         100.0,
@@ -428,7 +428,7 @@
         null,
         null,
         null,
-        null
+        168.54
       ]
     },
     "pandora_brincos": {
@@ -447,7 +447,7 @@
         null,
         null,
         null,
-        null
+        696.04
       ],
       "index": [
         100.0,
@@ -460,7 +460,7 @@
         null,
         null,
         null,
-        null
+        223.25
       ]
     },
     "monte_carlo_aneis": {
