@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T12:35:50.934021+00:00",
+  "generated_at": "2026-05-16T01:49:53.882321+00:00",
   "baseline_date": "2026-05-05",
   "dates": [
     "2026-05-05",
@@ -11,7 +11,8 @@
     "2026-05-12",
     "2026-05-13",
     "2026-05-14",
-    "2026-05-15"
+    "2026-05-15",
+    "2026-05-16"
   ],
   "series": {
     "vivara_aneis_ouro": {
@@ -29,6 +30,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -37,6 +39,7 @@
         99.95,
         99.92,
         100.05,
+        null,
         null,
         null,
         null,
@@ -59,6 +62,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -67,6 +71,7 @@
         99.92,
         100.2,
         100.0,
+        null,
         null,
         null,
         null,
@@ -89,6 +94,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -97,6 +103,7 @@
         99.81,
         100.01,
         100.49,
+        null,
         null,
         null,
         null,
@@ -119,6 +126,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -127,6 +135,7 @@
         100.14,
         99.98,
         100.49,
+        null,
         null,
         null,
         null,
@@ -149,6 +158,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -157,6 +167,7 @@
         100.26,
         100.28,
         100.32,
+        null,
         null,
         null,
         null,
@@ -179,6 +190,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -187,6 +199,7 @@
         99.6,
         99.88,
         99.71,
+        null,
         null,
         null,
         null,
@@ -209,6 +222,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -217,6 +231,7 @@
         99.89,
         99.91,
         100.32,
+        null,
         null,
         null,
         null,
@@ -239,6 +254,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -247,6 +263,7 @@
         99.79,
         100.07,
         100.14,
+        null,
         null,
         null,
         null,
@@ -269,6 +286,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -277,6 +295,7 @@
         100.08,
         99.83,
         100.3,
+        null,
         null,
         null,
         null,
@@ -299,6 +318,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -307,6 +327,7 @@
         99.79,
         99.95,
         100.12,
+        null,
         null,
         null,
         null,
@@ -329,6 +350,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -337,6 +359,7 @@
         99.97,
         100.03,
         99.88,
+        null,
         null,
         null,
         null,
@@ -359,6 +382,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -367,6 +391,7 @@
         100.25,
         100.47,
         100.32,
+        null,
         null,
         null,
         null,
@@ -389,6 +414,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -397,6 +423,7 @@
         100.49,
         100.45,
         100.14,
+        null,
         null,
         null,
         null,
@@ -419,6 +446,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -427,6 +455,7 @@
         100.2,
         100.33,
         100.49,
+        null,
         null,
         null,
         null,
@@ -449,6 +478,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -457,6 +487,7 @@
         99.97,
         100.07,
         99.81,
+        null,
         null,
         null,
         null,
@@ -479,6 +510,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -487,6 +519,7 @@
         100.01,
         100.22,
         99.99,
+        null,
         null,
         null,
         null,
@@ -509,6 +542,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -517,6 +551,7 @@
         99.8,
         99.96,
         100.02,
+        null,
         null,
         null,
         null,
@@ -539,6 +574,7 @@
         null,
         null,
         null,
+        null,
         null
       ],
       "index": [
@@ -547,6 +583,7 @@
         99.47,
         99.69,
         100.02,
+        null,
         null,
         null,
         null,
