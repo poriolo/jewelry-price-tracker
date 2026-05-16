@@ -1,6 +1,6 @@
 {
   "brand": "monte_carlo",
-  "scraped_at": "2026-05-16T03:05:10.349440+00:00",
+  "scraped_at": "2026-05-16T10:48:31.871515+00:00",
   "products": [
     {
       "id": "monte_carlo-aneis-43729",
@@ -799,16 +799,6 @@
       "price": 12170.0,
       "original_price": 12170.0,
       "url": "https://secure.montecarlo.com.br/anelintense-nim001657/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
-      "id": "monte_carlo-aneis-17864",
-      "name": "Anel Meia Aliança com 10 Pontos de Diamantes em Ouro Branco 18k",
-      "category": "aneis",
-      "price": 4780.0,
-      "original_price": 5980.0,
-      "url": "https://secure.montecarlo.com.br/anelmeia-alianca-nim001508/p",
       "material": null,
       "in_stock": true
     },
@@ -2999,6 +2989,16 @@
       "price": 9440.0,
       "original_price": 9440.0,
       "url": "https://secure.montecarlo.com.br/anelallure-nim033911/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "monte_carlo-aneis-39945",
+      "name": "Anel Allure em Ouro Amarelo 18k - 5,60 mm",
+      "category": "aneis",
+      "price": 9440.0,
+      "original_price": 9440.0,
+      "url": "https://secure.montecarlo.com.br/anelallure-nim033910/p",
       "material": null,
       "in_stock": true
     },

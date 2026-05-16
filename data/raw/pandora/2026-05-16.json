@@ -1,6 +1,6 @@
 {
   "brand": "pandora",
-  "scraped_at": "2026-05-16T03:01:28.531327+00:00",
+  "scraped_at": "2026-05-16T10:45:13.937108+00:00",
   "products": [
     {
       "id": "pandora-moments-16919",
@@ -2223,6 +2223,16 @@
       "in_stock": true
     },
     {
+      "id": "pandora-moments-17559",
+      "name": "Charm Prata Caracol Rosa",
+      "category": "moments",
+      "price": 349.0,
+      "original_price": 349.0,
+      "url": "https://www.pandorajoias.com.br/charm-prata-caracol-rosa/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
       "id": "pandora-moments-17553",
       "name": "Charm Pendente Cigarra Dourada",
       "category": "moments",
@@ -3169,16 +3179,6 @@
       "price": 619.0,
       "original_price": 619.0,
       "url": "https://www.pandorajoias.com.br/charm-prata-disney-101-dalmatas/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
-      "id": "pandora-moments-17559",
-      "name": "Charm Prata Caracol Rosa",
-      "category": "moments",
-      "price": 349.0,
-      "original_price": 349.0,
-      "url": "https://www.pandorajoias.com.br/charm-prata-caracol-rosa/p",
       "material": null,
       "in_stock": true
     },
@@ -9103,16 +9103,6 @@
       "in_stock": true
     },
     {
-      "id": "pandora-aneis-17068",
-      "name": "Anel De Prata Disney Concha Com Pérola Da Ariel",
-      "category": "aneis",
-      "price": 619.0,
-      "original_price": 619.0,
-      "url": "https://www.pandorajoias.com.br/anel-de-prata-disney-concha-com-perola-da-ariel/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "pandora-aneis-17034",
       "name": "Anel De Prata Disney Laço Da Branca De Neve",
       "category": "aneis",
@@ -10623,6 +10613,16 @@
       "in_stock": true
     },
     {
+      "id": "pandora-aneis-17068",
+      "name": "Anel De Prata Disney Concha Com Pérola Da Ariel",
+      "category": "aneis",
+      "price": 619.0,
+      "original_price": 619.0,
+      "url": "https://www.pandorajoias.com.br/anel-de-prata-disney-concha-com-perola-da-ariel/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
       "id": "pandora-aneis-17061",
       "name": "Anel Solitario Ouro Coração Elevado",
       "category": "aneis",
@@ -11333,6 +11333,16 @@
       "in_stock": true
     },
     {
+      "id": "pandora-brincos-16825",
+      "name": "Brinco De Prata Redondo Com Perolas",
+      "category": "brincos",
+      "price": 709.0,
+      "original_price": 709.0,
+      "url": "https://www.pandorajoias.com.br/brinco-de-prata-redondo-com-perolas/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
       "id": "pandora-brincos-16684",
       "name": "Brinco Argola Ouro Eternidade com Zircônias",
       "category": "brincos",
@@ -11459,16 +11469,6 @@
       "price": 1069.0,
       "original_price": 1069.0,
       "url": "https://www.pandorajoias.com.br/brinco-de-ouro-pendente-com-perolas/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
-      "id": "pandora-brincos-16825",
-      "name": "Brinco De Prata Redondo Com Perolas",
-      "category": "brincos",
-      "price": 709.0,
-      "original_price": 709.0,
-      "url": "https://www.pandorajoias.com.br/brinco-de-prata-redondo-com-perolas/p",
       "material": null,
       "in_stock": true
     },
