@@ -1,9 +1,10 @@
 """
 Vivara scraper — VTEX Intelligent Search API.
 Inicializa sessão na homepage para obter cookies VTEX antes de chamar a API.
+A API retorna produtos misturados independente do slug de categoria,
+por isso re-classifica cada produto pelo slug da sua própria URL.
 """
 import asyncio
-import json
 import random
 
 import httpx
@@ -34,6 +35,27 @@ CATEGORIES = {
     "brincos":           "brincos",
     "relogios":          "relogios",
 }
+
+# Prefixos de slug de URL → categoria interna
+_SLUG_MAP = [
+    (("anel", "alianca", "aliança", "solitario", "aparador", "meia-alianca"), "aneis"),
+    (("pulseira",),                                                            "pulseiras"),
+    (("colar", "pingente", "corrente", "gargantilha", "escapulario", "riviera"), "colares_pingentes"),
+    (("brinco", "argola"),                                                     "brincos"),
+    (("relogio",),                                                             "relogios"),
+]
+
+
+def _category_from_url(url: str) -> str | None:
+    """Detecta a categoria real do produto a partir do slug da URL."""
+    try:
+        slug = url.lower().split("vivara.com.br/")[-1].split("/")[0]
+        for prefixes, cat in _SLUG_MAP:
+            if any(slug.startswith(p) for p in prefixes):
+                return cat
+    except Exception:
+        pass
+    return None
 
 
 async def _init_session(client: httpx.AsyncClient) -> None:
@@ -81,7 +103,6 @@ async def _fetch_page(client: httpx.AsyncClient, category_slug: str, page: int) 
     print(f"[vivara] GET {url} page={page} → {resp.status_code}")
     resp.raise_for_status()
     data = resp.json()
-    # debug: print structure keys
     if isinstance(data, dict):
         print(f"[vivara] response keys: {list(data.keys())}")
         products = data.get("products", [])
@@ -102,7 +123,6 @@ async def scrape_category(client: httpx.AsyncClient, cat_key: str, cat_slug: str
             print(f"[vivara] ERROR page {page} of {cat_key}: {e}")
             break
 
-        # Handle both dict (Intelligent Search) and list (Catalog API) responses
         if isinstance(data, list):
             items = data
         else:
@@ -119,10 +139,14 @@ async def scrape_category(client: httpx.AsyncClient, cat_key: str, cat_slug: str
                 continue
             link = item.get("link", "")
             url = BASE_URL + link if link.startswith("/") else link
+
+            # Reclassifica a categoria pelo slug da URL do produto
+            real_cat = _category_from_url(url) or cat_key
+
             products.append({
-                "id": f"vivara-{cat_key}-{item.get('productId', abs(hash(name)))}",
+                "id": f"vivara-{real_cat}-{item.get('productId', abs(hash(name)))}",
                 "name": name,
-                "category": cat_key,
+                "category": real_cat,
                 "price": price,
                 "original_price": original_price,
                 "url": url,
@@ -138,20 +162,33 @@ async def scrape_category(client: httpx.AsyncClient, cat_key: str, cat_slug: str
             break
         page += 1
 
-    print(f"[vivara] {cat_key}: {len(products)} produtos")
-    if len(products) < 3:
-        print(f"[vivara] WARNING: poucos produtos em {cat_key}")
+    print(f"[vivara] {cat_key} (raw): {len(products)} produtos")
     return products
 
 
 async def scrape_all() -> list[dict]:
-    all_products = []
+    seen_urls: set[str] = set()
+    all_products: list[dict] = []
+
     async with httpx.AsyncClient(follow_redirects=True, cookies=httpx.Cookies()) as client:
         await _init_session(client)
         for cat_key, cat_slug in CATEGORIES.items():
             try:
                 products = await scrape_category(client, cat_key, cat_slug)
-                all_products.extend(products)
+                for p in products:
+                    if p["url"] not in seen_urls:
+                        seen_urls.add(p["url"])
+                        all_products.append(p)
             except Exception as e:
                 print(f"[vivara] FATAL {cat_key}: {e}")
+
+    # Log distribuição por categoria após deduplicação
+    from collections import Counter
+    cats = Counter(p["category"] for p in all_products)
+    mats = Counter(p["material"] for p in all_products)
+    print(f"[vivara] após dedup: {len(all_products)} produtos únicos")
+    print(f"[vivara] categorias: {dict(cats)}")
+    print(f"[vivara] materiais: {dict(mats)}")
+    if len(all_products) < 10:
+        print(f"[vivara] WARNING: poucos produtos únicos!")
     return all_products
