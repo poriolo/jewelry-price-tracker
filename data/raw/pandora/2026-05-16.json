@@ -1,6 +1,6 @@
 {
   "brand": "pandora",
-  "scraped_at": "2026-05-16T02:33:22.488809+00:00",
+  "scraped_at": "2026-05-16T02:46:32.964778+00:00",
   "products": [
     {
       "id": "pandora-moments-16919",
@@ -2489,16 +2489,6 @@
       "price": 669.0,
       "original_price": 669.0,
       "url": "https://www.pandorajoias.com.br/charm-prata-disney-malevola-brilha-no-escuro/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
-      "id": "pandora-moments-3684",
-      "name": "Charm Letra K",
-      "category": "moments",
-      "price": 259.0,
-      "original_price": 259.0,
-      "url": "https://www.pandorajoias.com.br/charm-letra-k/p",
       "material": null,
       "in_stock": true
     },
@@ -7253,6 +7243,16 @@
       "in_stock": true
     },
     {
+      "id": "pandora-moments-3684",
+      "name": "Charm Letra K",
+      "category": "moments",
+      "price": 259.0,
+      "original_price": 259.0,
+      "url": "https://www.pandorajoias.com.br/charm-letra-k/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
       "id": "pandora-moments-3683",
       "name": "Charm Letra J",
       "category": "moments",
@@ -9173,6 +9173,16 @@
       "in_stock": true
     },
     {
+      "id": "pandora-aneis-16458",
+      "name": "Anel Chevron Desejos Brilhante",
+      "category": "aneis",
+      "price": 349.0,
+      "original_price": 349.0,
+      "url": "https://www.pandorajoias.com.br/anel-chevron-desejos-brilhante/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
       "id": "pandora-aneis-16454",
       "name": "Anel De Prata Riqueza Botanica Brilhante",
       "category": "aneis",
@@ -9479,16 +9489,6 @@
       "price": 349.0,
       "original_price": 349.0,
       "url": "https://www.pandorajoias.com.br/anel-de-prata-estrela-cadente-brilhante/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
-      "id": "pandora-aneis-16458",
-      "name": "Anel Chevron Desejos Brilhante",
-      "category": "aneis",
-      "price": 349.0,
-      "original_price": 349.0,
-      "url": "https://www.pandorajoias.com.br/anel-chevron-desejos-brilhante/p",
       "material": null,
       "in_stock": true
     },
@@ -12183,16 +12183,6 @@
       "in_stock": true
     },
     {
-      "id": "pandora-colares-16966",
-      "name": "Colar De Ouro: Riqueza Botanica Radiante",
-      "category": "colares",
-      "price": 1609.0,
-      "original_price": 1609.0,
-      "url": "https://www.pandorajoias.com.br/colar-de-ouro--riqueza-botanica-radiante/p",
-      "material": null,
-      "in_stock": true
-    },
-    {
       "id": "pandora-colares-16690",
       "name": "Colar Prata Zirconia Tipo Gota Brilhante",
       "category": "colares",
@@ -12349,6 +12339,16 @@
       "price": 849.0,
       "original_price": 849.0,
       "url": "https://www.pandorajoias.com.br/colar-de-prata-pingente-quadrado-brilhante/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "pandora-colares-16966",
+      "name": "Colar De Ouro: Riqueza Botanica Radiante",
+      "category": "colares",
+      "price": 1609.0,
+      "original_price": 1609.0,
+      "url": "https://www.pandorajoias.com.br/colar-de-ouro--riqueza-botanica-radiante/p",
       "material": null,
       "in_stock": true
     },

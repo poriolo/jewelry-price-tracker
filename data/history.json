@@ -1,6 +1,225 @@
 {
-  "generated_at": "",
-  "baseline_date": null,
-  "dates": [],
-  "series": {}
+  "generated_at": "2026-05-16T02:49:56.629806+00:00",
+  "baseline_date": "2026-05-16",
+  "dates": [
+    "2026-05-16"
+  ],
+  "series": {
+    "vivara_aneis_ouro": {
+      "label": "Vivara — Anéis Ouro",
+      "brand": "vivara",
+      "category": "aneis",
+      "material": "ouro",
+      "prices": [
+        2241.88
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_aneis_prata": {
+      "label": "Vivara — Anéis Prata",
+      "brand": "vivara",
+      "category": "aneis",
+      "material": "prata",
+      "prices": [
+        463.0
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_pulseiras_ouro": {
+      "label": "Vivara — Pulseiras Ouro",
+      "brand": "vivara",
+      "category": "pulseiras",
+      "material": "ouro",
+      "prices": [
+        2241.88
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_pulseiras_prata": {
+      "label": "Vivara — Pulseiras Prata",
+      "brand": "vivara",
+      "category": "pulseiras",
+      "material": "prata",
+      "prices": [
+        463.0
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_colares_ouro": {
+      "label": "Vivara — Colares Ouro",
+      "brand": "vivara",
+      "category": "colares_pingentes",
+      "material": "ouro",
+      "prices": [
+        2241.88
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_colares_prata": {
+      "label": "Vivara — Colares Prata",
+      "brand": "vivara",
+      "category": "colares_pingentes",
+      "material": "prata",
+      "prices": [
+        463.0
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_brincos_ouro": {
+      "label": "Vivara — Brincos Ouro",
+      "brand": "vivara",
+      "category": "brincos",
+      "material": "ouro",
+      "prices": [
+        2241.88
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_brincos_prata": {
+      "label": "Vivara — Brincos Prata",
+      "brand": "vivara",
+      "category": "brincos",
+      "material": "prata",
+      "prices": [
+        463.0
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "vivara_relogios": {
+      "label": "Vivara — Relógios",
+      "brand": "vivara",
+      "category": "relogios",
+      "material": "all",
+      "prices": [
+        null
+      ],
+      "index": [
+        null
+      ]
+    },
+    "pandora_moments": {
+      "label": "Pandora — Moments",
+      "brand": "pandora",
+      "category": "moments",
+      "material": "all",
+      "prices": [
+        487.43
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "pandora_pulseiras": {
+      "label": "Pandora — Pulseiras",
+      "brand": "pandora",
+      "category": "pulseiras",
+      "material": "all",
+      "prices": [
+        938.28
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "pandora_colares": {
+      "label": "Pandora — Colares",
+      "brand": "pandora",
+      "category": "colares",
+      "material": "all",
+      "prices": [
+        996.22
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "pandora_aneis": {
+      "label": "Pandora — Anéis",
+      "brand": "pandora",
+      "category": "aneis",
+      "material": "all",
+      "prices": [
+        667.18
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "pandora_brincos": {
+      "label": "Pandora — Brincos",
+      "brand": "pandora",
+      "category": "brincos",
+      "material": "all",
+      "prices": [
+        696.04
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "monte_carlo_aneis": {
+      "label": "Monte Carlo — Anéis",
+      "brand": "monte_carlo",
+      "category": "aneis",
+      "material": "all",
+      "prices": [
+        3911.72
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "monte_carlo_pulseiras": {
+      "label": "Monte Carlo — Pulseiras",
+      "brand": "monte_carlo",
+      "category": "pulseiras",
+      "material": "all",
+      "prices": [
+        4962.27
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "monte_carlo_colares": {
+      "label": "Monte Carlo — Colares",
+      "brand": "monte_carlo",
+      "category": "colares",
+      "material": "all",
+      "prices": [
+        1662.16
+      ],
+      "index": [
+        100.0
+      ]
+    },
+    "monte_carlo_brincos": {
+      "label": "Monte Carlo — Brincos",
+      "brand": "monte_carlo",
+      "category": "brincos",
+      "material": "all",
+      "prices": [
+        4644.75
+      ],
+      "index": [
+        100.0
+      ]
+    }
+  }
 }
