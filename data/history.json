@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-05-16T10:48:31.915753+00:00",
+  "generated_at": "2026-05-17T10:58:20.719207+00:00",
   "baseline_date": "2026-05-16",
   "dates": [
-    "2026-05-16"
+    "2026-05-16",
+    "2026-05-17"
   ],
   "series": {
     "vivara_aneis_ouro": {
@@ -11,9 +12,11 @@
       "category": "aneis",
       "material": "ouro",
       "prices": [
+        2247.5,
         2247.5
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -23,9 +26,11 @@
       "category": "aneis",
       "material": "prata",
       "prices": [
+        398.57,
         398.57
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -35,9 +40,11 @@
       "category": "pulseiras",
       "material": "ouro",
       "prices": [
+        5748.0,
         5748.0
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -47,9 +54,11 @@
       "category": "pulseiras",
       "material": "prata",
       "prices": [
+        562.0,
         562.0
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -59,9 +68,11 @@
       "category": "colares_pingentes",
       "material": "ouro",
       "prices": [
+        9452.5,
         9452.5
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -71,9 +82,11 @@
       "category": "colares_pingentes",
       "material": "prata",
       "prices": [
+        497.5,
         497.5
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -83,9 +96,11 @@
       "category": "brincos",
       "material": "ouro",
       "prices": [
+        6150.0,
         6150.0
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -95,10 +110,12 @@
       "category": "brincos",
       "material": "prata",
       "prices": [
-        417.5
+        417.5,
+        456.67
       ],
       "index": [
-        100.0
+        100.0,
+        109.38
       ]
     },
     "vivara_relogios": {
@@ -107,9 +124,11 @@
       "category": "relogios",
       "material": "all",
       "prices": [
+        null,
         null
       ],
       "index": [
+        null,
         null
       ]
     },
@@ -119,9 +138,11 @@
       "category": "moments",
       "material": "all",
       "prices": [
+        487.43,
         487.43
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -131,9 +152,11 @@
       "category": "pulseiras",
       "material": "all",
       "prices": [
+        938.28,
         938.28
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -143,9 +166,11 @@
       "category": "colares",
       "material": "all",
       "prices": [
+        996.22,
         996.22
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -155,9 +180,11 @@
       "category": "aneis",
       "material": "all",
       "prices": [
+        667.18,
         667.18
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -167,9 +194,11 @@
       "category": "brincos",
       "material": "all",
       "prices": [
+        696.04,
         696.04
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -179,10 +208,12 @@
       "category": "aneis",
       "material": "all",
       "prices": [
-        3928.42
+        3928.42,
+        3945.05
       ],
       "index": [
-        100.0
+        100.0,
+        100.42
       ]
     },
     "monte_carlo_pulseiras": {
@@ -191,9 +222,11 @@
       "category": "pulseiras",
       "material": "all",
       "prices": [
+        4962.27,
         4962.27
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -203,9 +236,11 @@
       "category": "colares",
       "material": "all",
       "prices": [
+        1662.16,
         1662.16
       ],
       "index": [
+        100.0,
         100.0
       ]
     },
@@ -215,9 +250,11 @@
       "category": "brincos",
       "material": "all",
       "prices": [
+        4644.75,
         4644.75
       ],
       "index": [
+        100.0,
         100.0
       ]
     }
