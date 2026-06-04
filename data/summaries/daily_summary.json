@@ -2574,5 +2574,78 @@
         }
       }
     }
+  },
+  {
+    "date": "2026-06-04",
+    "brands": {
+      "vivara": {},
+      "monte_carlo": {
+        "aneis": {
+          "all": {
+            "avg_price": 3975.42,
+            "median": 1860.0,
+            "count": 321
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 4745.46,
+            "median": 3245.0,
+            "count": 582
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 1911.57,
+            "median": 1285.0,
+            "count": 166
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 4951.21,
+            "median": 2520.0,
+            "count": 174
+          }
+        }
+      },
+      "pandora": {
+        "moments": {
+          "all": {
+            "avg_price": 488.67,
+            "median": 489.0,
+            "count": 763
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 934.3,
+            "median": 889.0,
+            "count": 132
+          }
+        },
+        "aneis": {
+          "all": {
+            "avg_price": 669.23,
+            "median": 619.0,
+            "count": 218
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 705.53,
+            "median": 644.0,
+            "count": 118
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 993.08,
+            "median": 889.0,
+            "count": 103
+          }
+        }
+      }
+    }
   }
 ]
