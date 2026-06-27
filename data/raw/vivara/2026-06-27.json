@@ -1,0 +1,506 @@
+{
+  "brand": "vivara",
+  "scraped_at": "2026-06-27T08:32:29.922148+00:00",
+  "products": [
+    {
+      "id": "vivara-brincos-55345",
+      "name": "Argola Palace em Prata 925 e Ouro Amarelo 18k com Safira Incolor, Negra e Laranja",
+      "category": "brincos",
+      "price": 6150.0,
+      "original_price": 6150.0,
+      "url": "https://www.vivara.com.br/argola-palace-em-prata-925-e-ouro-amarelo-18k-com-safira-incolor-negra-e-laranja-br00051959/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-55343",
+      "name": "Pulseira Palace em Prata 925 e Ouro Amarelo 18k com Safira Incolor, Negra e Laranja",
+      "category": "pulseiras",
+      "price": 15690.0,
+      "original_price": 15690.0,
+      "url": "https://www.vivara.com.br/pulseira-palece-em-prata-925-e-ouro-amarelo-18k-com-safira-incolor-negra-e-laranja-pu00017196/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-55344",
+      "name": "Anel Palace em Prata 925 com Safira Incolor, Negra e Laranja",
+      "category": "aneis",
+      "price": 2050.0,
+      "original_price": 2050.0,
+      "url": "https://www.vivara.com.br/anel-palace-em-prata-925-com-safira-incolor-negra-e-laranja-an00055961/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-55341",
+      "name": "Anel Palace em Prata 925 e Ouro Amarelo 18k com Safira Incolor, Negra e Laranja",
+      "category": "aneis",
+      "price": 4950.0,
+      "original_price": 4950.0,
+      "url": "https://www.vivara.com.br/anel-palace-em-prata-925-e-ouro-amarelo-18k-com-safira-incolor-negra-e-laranja-an00055962/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-55340",
+      "name": "Pulseira Palace em Prata 925 e Ouro Amarelo 18k com Safira Incolor, Negra e Laranja",
+      "category": "pulseiras",
+      "price": 11190.0,
+      "original_price": 11190.0,
+      "url": "https://www.vivara.com.br/pulseira-palece-em-prata-925-e-ouro-amarelo-18k-com-safira-incolor-negra-e-laranja-pu00017202/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-55416",
+      "name": "Pingente Palace em Prata 925 com Safira Incolor, Negra e Laranja",
+      "category": "colares_pingentes",
+      "price": 850.0,
+      "original_price": 850.0,
+      "url": "https://www.vivara.com.br/pingente-palace-em-prata-925-com-safira-incolor-negra-e-laranja-be00052807/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-52018",
+      "name": "Relógio Akium Feminino em Aço Prateado e Dourado",
+      "category": "relogios",
+      "price": 490.0,
+      "original_price": 490.0,
+      "url": "https://www.vivara.com.br/relogio-akium-feminino-aco-aco-rose-ak00003061/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56450",
+      "name": "Anel Life Éden em Prata 925 com Zircônia Azul, Rosa e Incolor",
+      "category": "aneis",
+      "price": 390.0,
+      "original_price": 390.0,
+      "url": "https://www.vivara.com.br/anel-life-eden-em-prata-925-com-zirconia-azul-rosa-e-incolor-al09034500/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56810",
+      "name": "Anel Solitário Life em Prata 925 com Banho de Ouro Amarelo e Zircônia Incolor",
+      "category": "aneis",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/anel-solitario-life-em-prata-925-com-banho-de-ouro-amarelo-e-zirconia-incolor-al09035800/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56811",
+      "name": "Anel Solitário Life em Prata 925 com Banho de Ouro Amarelo e Zircônia Incolor",
+      "category": "aneis",
+      "price": 560.0,
+      "original_price": 560.0,
+      "url": "https://www.vivara.com.br/anel-solitario-life-em-prata-925-com-banho-de-ouro-amarelo-e-zirconia-incolor-al09035700/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-56274",
+      "name": "Relógio Tommy Hilfiger TH Regatta Masculino em Borracha Azul 1792249",
+      "category": "relogios",
+      "price": 890.0,
+      "original_price": 890.0,
+      "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-regatta-masculino-em-borracha-azul-1792249-to00005169/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-26883",
+      "name": "Relógio Baume & Mercier Feminino Couro Laranja M0A10290 05 ATM",
+      "category": "relogios",
+      "price": 23300.0,
+      "original_price": 23300.0,
+      "url": "https://www.vivara.com.br/relogio-baume-mercier-feminino-couro-laranja-m0a10290-05-atm-bm00000076/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-55262",
+      "name": "Relógio Baume & Mercier Clifton Automatico Masculino Couro Preto M0A10316",
+      "category": "relogios",
+      "price": 26900.0,
+      "original_price": 26900.0,
+      "url": "https://www.vivara.com.br/relogio-baume-mercier-clifton-automatico-masculino-couro-preto-m0a10316-bm00000116/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-26895",
+      "name": "Relógio Baume & Mercier Feminino Aço M0A10356 05 ATM",
+      "category": "relogios",
+      "price": 10880.0,
+      "original_price": 10880.0,
+      "url": "https://www.vivara.com.br/relogio-baume-mercier-feminino-aco-m0a10356-05-atm-bm00000093/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-51067",
+      "name": "Relógio Life Lovely Feminino Couro e Aço Vermelho",
+      "category": "relogios",
+      "price": 990.0,
+      "original_price": 990.0,
+      "url": "https://www.vivara.com.br/relogio-life-lovely-feminino-couro-e-aco-vermelho-li00000073/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-56273",
+      "name": "Relógio Tommy Hilfiger TH Regatta Masculino em Borracha Branca 1792263",
+      "category": "relogios",
+      "price": 890.0,
+      "original_price": 890.0,
+      "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-regatta-masculino-em-borracha-branca-1792263-to00005168/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56767",
+      "name": "Anel Solitário Redondo Life em Prata 925 com Zircônia Incolor",
+      "category": "aneis",
+      "price": 550.0,
+      "original_price": 550.0,
+      "url": "https://www.vivara.com.br/anel-solitario-iv-redondo-life-em-prata-925-com-zirconia-incolor-al09047800/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56651",
+      "name": "Anel Cosmos em Prata 925 com Banho de Ródio Negro e Espinélio",
+      "category": "aneis",
+      "price": 350.0,
+      "original_price": 350.0,
+      "url": "https://www.vivara.com.br/anel-cosmos-2-em-prata-925-com-banho-de-rodio-negro-e-espinelio-an00056396/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-39683",
+      "name": "Pulseira Life Coração em Prata 925",
+      "category": "pulseiras",
+      "price": 610.0,
+      "original_price": 610.0,
+      "url": "https://www.vivara.com.br/pulseira-life-fecho-t-coracao-pl00001190/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-48536",
+      "name": "Colar Life Amuleto Infinito em Prata 925 com Banho de Ouro Amarelo 18k, 40cm",
+      "category": "colares_pingentes",
+      "price": 630.0,
+      "original_price": 630.0,
+      "url": "https://www.vivara.com.br/colar-life-amuleto-infinito-banho-ouro-amarelo-cl00001611/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50706",
+      "name": "Anel Life Astro Gota em Prata 925 com Pedras Incolores",
+      "category": "aneis",
+      "price": 320.0,
+      "original_price": 320.0,
+      "url": "https://www.vivara.com.br/anel-life-astro-gota-em-prata-925-com-pedras-incolores-al00771100/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-56769",
+      "name": "Brinco Life Éden em Prata 925 com Zircônia Azul",
+      "category": "brincos",
+      "price": 490.0,
+      "original_price": 490.0,
+      "url": "https://www.vivara.com.br/brinco-life-eden-em-prata-925-com-zirconia-azul-bl00003112/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-24562",
+      "name": "Anel Life Patuás Trevo em Prata 925",
+      "category": "aneis",
+      "price": 220.0,
+      "original_price": 220.0,
+      "url": "https://www.vivara.com.br/anel-life-patuas-trevo-prata-al00064000/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56809",
+      "name": "Anel Life Solitário em Prata 925 com Zircônia Incolor",
+      "category": "aneis",
+      "price": 590.0,
+      "original_price": 590.0,
+      "url": "https://www.vivara.com.br/anel-life-solitario-iii-em-prata-925-com-zirconia-incolor-al09041600/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-45335",
+      "name": "Anel Viena em Prata 925",
+      "category": "aneis",
+      "price": 850.0,
+      "original_price": 850.0,
+      "url": "https://www.vivara.com.br/anel-viena-em-prata-925-an00053332/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-22326",
+      "name": "Anel Color em Prata 925 com Topázio Sky e Topázios Incolores",
+      "category": "aneis",
+      "price": 650.0,
+      "original_price": 650.0,
+      "url": "https://www.vivara.com.br/anel-color-em-prata-925-com-topazio-sky-e-topazios-incolores-an00052637/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-51737",
+      "name": "Relógio Life Star Feminino Aço Prateado",
+      "category": "relogios",
+      "price": 750.0,
+      "original_price": 750.0,
+      "url": "https://www.vivara.com.br/relogio-life-star-feminino-aco-prateado-li00000076/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-54895",
+      "name": "Meia Aliança Life Cuore em Prata 925 com Ródio Negro e Pedras Rosas",
+      "category": "aneis",
+      "price": 480.0,
+      "original_price": 480.0,
+      "url": "https://www.vivara.com.br/meia-alianca-life-cuore-em-prata-925-com-rodio-negro-e-pedras-rosas-al09019900/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-56453",
+      "name": "Brinco Life Éden em Prata 925 com Zircônia Rosa",
+      "category": "brincos",
+      "price": 490.0,
+      "original_price": 490.0,
+      "url": "https://www.vivara.com.br/brinco-life-eden-em-prata-925-com-zirconia-rosa-bl00003114/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-23924",
+      "name": "Anel Life Trançado em Prata 925",
+      "category": "aneis",
+      "price": 230.0,
+      "original_price": 230.0,
+      "url": "https://www.vivara.com.br/anel-life-trancado-prata-al00020500/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-55000",
+      "name": "Pulseira Life Cuore em Prata 925 com Ródio Negro e Pedras Rosas",
+      "category": "pulseiras",
+      "price": 570.0,
+      "original_price": 570.0,
+      "url": "https://www.vivara.com.br/pulseira-life-cuore-em-prata-925-com-rodio-negro-e-pedras-rosas-pl00002069/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-56270",
+      "name": "Relógio Tommy Hilfiger TH Regatta Masculino em Borracha Azul 1792248",
+      "category": "relogios",
+      "price": 890.0,
+      "original_price": 890.0,
+      "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-regatta-masculino-em-borracha-azul-1792248-to00005166/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-55692",
+      "name": "Relógio Tommy Hilfiger Remy Masculino em Borracha Azul 1792225",
+      "category": "relogios",
+      "price": 890.0,
+      "original_price": 890.0,
+      "url": "https://www.vivara.com.br/relogio-tommy-hilfiger-remy-masculino-em-borracha-azul-1792225-to00005113/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-22834",
+      "name": "Anel Life Coração em Prata 925",
+      "category": "aneis",
+      "price": 220.0,
+      "original_price": 220.0,
+      "url": "https://www.vivara.com.br/anel-life-coracao-em-prata-925-al00061000/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-56556",
+      "name": "Colar Life Coração em Prata 925 com Zircônia Incolor",
+      "category": "colares_pingentes",
+      "price": 650.0,
+      "original_price": 650.0,
+      "url": "https://www.vivara.com.br/colar-life-coracao-em-prata-925-com-zirconia-incolor-cl00002478/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-24514",
+      "name": "Anel Life Love Corações em Prata 925",
+      "category": "aneis",
+      "price": 250.0,
+      "original_price": 250.0,
+      "url": "https://www.vivara.com.br/anel-life-love-coracoes-prata-al00040900/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-51066",
+      "name": "Relógio Life Lovely Feminino Couro e Aço Verde",
+      "category": "relogios",
+      "price": 990.0,
+      "original_price": 990.0,
+      "url": "https://www.vivara.com.br/relogio-life-lovely-feminino-couro-e-aco-verde-li00000072/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-44006",
+      "name": "Brinco Life Blend III Prata Topázio Incolor Princess",
+      "category": "brincos",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/brinco-life-blend-iii-prata-topazio-incolor-princess-bl00001037/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50992",
+      "name": "Anel Life Blend em Prata 925 com Banho de Ouro Amarelo 18k e Pedras Incolores",
+      "category": "aneis",
+      "price": 550.0,
+      "original_price": 550.0,
+      "url": "https://www.vivara.com.br/anel-life-blend-iv-em-prata-925-com-banho-de-ouro-amarelo-18k-e-pedras-incolores-al02007600/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-49812",
+      "name": "Relógio Akium Feminino Madrepérola e Dourado",
+      "category": "relogios",
+      "price": 690.0,
+      "original_price": 690.0,
+      "url": "https://www.vivara.com.br/relogio-akium-feminino-madreperola-e-dourado-ak00003037/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-22725",
+      "name": "Anel Life Fresh Duplo em Prata 925 com Pedras Incolores",
+      "category": "aneis",
+      "price": 720.0,
+      "original_price": 720.0,
+      "url": "https://www.vivara.com.br/anel-life-fresh-duplo-prata-incolor-al00602700/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-26567",
+      "name": "Brinco Life Estrelas",
+      "category": "brincos",
+      "price": 280.0,
+      "original_price": 280.0,
+      "url": "https://www.vivara.com.br/brinco-life-estrelas-bl00000182/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-55135",
+      "name": "Brinco Life Flor em Prata 925",
+      "category": "brincos",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/brinco-life-flor-em-prata-925-bl00002929/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-23566",
+      "name": "Anel Marine em Prata 925 com Topázios Sky e Topázios Incolores",
+      "category": "aneis",
+      "price": 950.0,
+      "original_price": 950.0,
+      "url": "https://www.vivara.com.br/anel-marine-em-prata-925-com-topazio-sky-e-topazio-incolor-an00052630/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56768",
+      "name": "Anel Life Éden em Prata 925 com Zircônia Azul",
+      "category": "aneis",
+      "price": 790.0,
+      "original_price": 790.0,
+      "url": "https://www.vivara.com.br/anel-life-eden-em-prata-925-com-zirconia-azul-al09035200/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-35944",
+      "name": "Separador Life Amor Coração em Prata 925",
+      "category": "aneis",
+      "price": 210.0,
+      "original_price": 210.0,
+      "url": "https://www.vivara.com.br/separador-life-coracao-vazado-el00048825/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-56635",
+      "name": "Pingente Amor Duo Coração em Prata 925 e Ouro Amarelo 18K",
+      "category": "colares_pingentes",
+      "price": 1250.0,
+      "original_price": 1250.0,
+      "url": "https://www.vivara.com.br/pingente-amor-duo-coracao-em-prata-925-e-ouro-amarelo-18k-be00052983/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50707",
+      "name": "Brinco Life Astro Gota em Prata 925 com Pedras Incolores",
+      "category": "brincos",
+      "price": 470.0,
+      "original_price": 470.0,
+      "url": "https://www.vivara.com.br/brinco-life-astro-gota-em-prata-925-com-pedras-incolores-bl00002265/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-48254",
+      "name": "Relógio Life Amor Feminino Aço Prateado",
+      "category": "relogios",
+      "price": 750.0,
+      "original_price": 750.0,
+      "url": "https://www.vivara.com.br/relogio-life-amor-feminino-aco-prateado-li00000034/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-56582",
+      "name": "Anel Solitário Life em Prata 925 com Banho de Ouro Amarelo 18K e Zircônia Incolor",
+      "category": "aneis",
+      "price": 750.0,
+      "original_price": 750.0,
+      "url": "https://www.vivara.com.br/anel-solitario-i-life-em-prata-925-com-banho-de-ouro-amarelo-18k-e-zirconia-incolor-al09049800/p",
+      "material": "ouro",
+      "in_stock": true
+    }
+  ]
+}
