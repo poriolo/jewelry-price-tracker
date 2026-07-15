@@ -74,8 +74,16 @@ SMARTFIT = {
     ),
     "ir": 0.34,
     "tranches": [
-        {"name": "Dívida financeira", "desc": "custo médio CDI + 2,09% • premissa: rolagem",
-         "opening": 5900.0, "spread": 0.0209, "amort": {}},
+        {"name": "Dívida financeira", "desc": "CDI + 2,09% • cronograma de vencimentos • refi editável",
+         "opening": 5900.0, "spread": 0.0209, "refi": 1.00,
+         # Escada de amortização (R$ mn). 2026 = R$1,2bi é firme (release 1T26);
+         # 2028/2029/2030/2032/2035 = anos de vencimento reais das emissões
+         # (SMFT16 12/28, SMFT19 04/29, 13ª emissão 5/7/10 anos, 14ª ~2031/33).
+         # Montantes por ano reconstruídos p/ fechar a dívida bruta — edite com o
+         # gráfico de amortização do release. Anos trimestrais lançados no 4º tri.
+         "amort": {"4T26E": 1200.0, "4T27E": 300.0, "2028E": 700.0, "2029E": 800.0,
+                   "2030E": 650.0, "2031E": 600.0, "2032E": 550.0, "2033E": 400.0,
+                   "2034E": 300.0, "2035E": 400.0}},
     ],
     "cash_anchors": {"1T26\n(Real)": 1700.0},
     "readme": [
@@ -87,9 +95,16 @@ SMARTFIT = {
         ("• Emissões recentes: 13ª (out/25, ≥R$ 1 bi, séries de 5/7/10 anos) e 14ª (mar/26, R$ 1,32 bi).", "n"),
         ("• EBITDA 1T26 R$ 672 mi; geração de caixa operacional R$ 635 mi (95% do EBITDA).", "n"),
         ("", None),
-        ("PREMISSAS ESTIMADAS (ajuste com o release/ITR)", "b"),
-        ("• Dívida modelada como tranche única consolidada em rolagem (amort. = 0 no default).", "n"),
-        ("  Preencha o cronograma real de amortização (ex.: R$ 1,2 bi em 2026) nas células amarelas.", "n"),
+        ("CRONOGRAMA DE AMORTIZAÇÃO", "b"),
+        ("• 2026: R$ 1,2 bi vencendo — FIRME (release 1T26).", "n"),
+        ("• Anos de vencimento reais: SMFT16 (12/2028), SMFT19 (04/2029), 13ª emissão", "n"),
+        ("  (2030/2032/2035, séries de 5/7/10 anos), 14ª emissão (~2031/2033).", "n"),
+        ("• Montantes por ano RECONSTRUÍDOS p/ fechar a dívida bruta (não achei o gráfico", "n"),
+        ("  de amortização do release — bloqueado). Edite as células amarelas com os valores reais.", "n"),
+        ("• Driver 'Refinanciamento (% da amort.)' = 100% no default: dívida rolada, bruta estável", "n"),
+        ("  e a escada mostra só o muro de vencimentos. Baixe p/ modelar desalavancagem.", "n"),
+        ("", None),
+        ("PREMISSAS ESTIMADAS", "b"),
         ("• Dívida líquida financeira ampliada (c/ aquisições a pagar + antecipação de recebíveis)", "n"),
         ("  era R$ 5,6 bi no 1T26 — não incluída aqui (só dívida financeira).", "n"),
         ("• Não inclui passivo de arrendamento (IFRS 16), relevante p/ o setor.", "n"),
@@ -228,6 +243,13 @@ def build_model(cfg):
         label(r, f"Spread {t['name']} (a.a.)")
         sd(ws.cell(row=r, column=first, value=t["spread"]), fmt=PCT, fill=FILL_INPUT)
         spread_cells.append(f"$" + get_column_letter(first) + f"${r}")
+    refi_cells = [None] * len(tranches)
+    for ti, t in enumerate(tranches):
+        if t.get("refi") is not None:
+            r += 1
+            label(r, f"Refinanciamento {t['name']} (% da amort.)")
+            sd(ws.cell(row=r, column=first, value=t["refi"]), fmt=PCT, fill=FILL_INPUT)
+            refi_cells[ti] = f"$" + get_column_letter(first) + f"${r}"
     r += 1
     R["ir"] = r
     label(r, "Alíquota IR/CSLL")
@@ -316,8 +338,11 @@ def build_model(cfg):
                 put(tr["fim"], t["opening"], fill=FILL_ANCHOR, font=F_BOLD)
             else:
                 put(tr["ini"], f"={prev}{tr['fim']}")
-                put(tr["capt"], 0, fill=FILL_INPUT)
                 put(tr["amort"], t["amort"].get(plabel, 0), fill=FILL_INPUT)
+                if refi_cells[ti] is not None:
+                    put(tr["capt"], f"={L}{tr['amort']}*{refi_cells[ti]}", fill=FILL_INPUT)
+                else:
+                    put(tr["capt"], 0, fill=FILL_INPUT)
                 put(tr["fim"], f"={L}{tr['ini']}+{L}{tr['capt']}-{L}{tr['amort']}", font=F_BOLD)
                 put(tr["med"], f"=({L}{tr['ini']}+{L}{tr['fim']})/2", font=F_NOTE)
                 put(tr["jur"], f"={L}{tr['med']}*({L}{CDI}+{spread_cells[ti]})*{L}{FROW}")
