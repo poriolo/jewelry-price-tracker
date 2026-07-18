@@ -42,8 +42,13 @@ VIVARA = {
     "tranches": [
         {"name": "Debêntures VIVA11", "desc": "100% CDI + 0,70% • amort. 50% 2029 / 50% 2030",
          "opening": 300.0, "spread": 0.0070, "amort": {"2029E": 150.0, "2030E": 150.0}},
-        {"name": "Outras dívidas", "desc": "bancos / FX / capital de giro — premissa: rolagem",
-         "opening": 231.3, "spread": 0.0200, "amort": {}},
+        {"name": "Outras dívidas", "desc": "capital de giro / FX (swap→CDI) • venc. 2026–1T27 • CDI+~1,05%",
+         "opening": 231.3, "spread": 0.0105, "refi": 0.00,
+         # Linhas curtas com vencimentos reais: 09/2026, 12/2026 e 02/2027
+         # (CDI+0,55% / +0,95% / +1,69%). Montantes por vencimento reconstruídos
+         # p/ somar os R$ 231,3 mi (o ITR não abre o valor de cada linha).
+         # Base = amortizam (refi 0%): XP projeta Vivara a caixa líquido até fim/2026.
+         "amort": {"3T26E": 80.0, "4T26E": 80.0, "1T27E": 71.3}},
     ],
     "cash_anchors": {"4T25\n(Real)": 398.6, "1T26\n(Real)": 284.7},
     "readme": [
@@ -53,9 +58,16 @@ VIVARA = {
         ("• 31/12/2025: dívida bruta R$ 531,3 mi | caixa R$ 398,6 mi | dívida líquida R$ 132,6 mi.", "n"),
         ("• 1T26: dívida líquida R$ 246,6 mi | alavancagem 0,3x ND/EBITDA.", "n"),
         ("", None),
-        ("PREMISSAS ESTIMADAS (ajuste com o ITR)", "b"),
-        ("• 'Outras dívidas' = bruta − debêntures = R$ 231,3 mi, modeladas como rolagem (amort. = 0).", "n"),
-        ("• Spread outras dívidas = CDI + 2,00% a.a.; caixa 1T26 (R$ 284,7 mi) fecha a DL reportada.", "n"),
+        ("CRONOGRAMA DE AMORTIZAÇÃO", "b"),
+        ("• Debêntures VIVA11: 50% em 27/08/2029 e 50% em 27/08/2030 — contratual (firme).", "n"),
+        ("• Outras dívidas (R$ 231,3 mi): capital de giro / FX (swap→CDI), vencimentos reais em", "n"),
+        ("  09/2026 (CDI+0,55%), 12/2026 (CDI+0,95%) e 02/2027 (CDI+1,69%). Montante de cada", "n"),
+        ("  vencimento reconstruído (o ITR não abre o valor por linha) — edite as células amarelas.", "n"),
+        ("• Driver 'Refinanciamento Outras dívidas' = 0% (base: amortizam; XP vê Vivara a caixa", "n"),
+        ("  líquido até fim/2026). Suba p/ modelar rolagem dessas linhas.", "n"),
+        ("", None),
+        ("PREMISSAS ESTIMADAS", "b"),
+        ("• Caixa 1T26 (R$ 284,7 mi) fecha a DL reportada de R$ 246,6 mi.", "n"),
         ("• 'Despesa de juros' é só a da dívida; o resultado financeiro reportado (−R$ 15 mi no 1T26)", "n"),
         ("  inclui derivativos/MtM e não bate 1:1.", "n"),
         ("", None),
