@@ -15364,5 +15364,149 @@
         }
       }
     }
+  },
+  {
+    "date": "2026-09-05",
+    "brands": {
+      "pandora": {
+        "moments": {
+          "all": {
+            "avg_price": 493.55,
+            "median": 529.0,
+            "count": 997
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 910.03,
+            "median": 799.0,
+            "count": 165
+          }
+        },
+        "aneis": {
+          "all": {
+            "avg_price": 630.51,
+            "median": 619.0,
+            "count": 331
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 655.96,
+            "median": 619.0,
+            "count": 135
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 976.98,
+            "median": 889.0,
+            "count": 104
+          }
+        }
+      },
+      "monte_carlo": {
+        "aneis": {
+          "all": {
+            "avg_price": 3892.14,
+            "median": 2190.0,
+            "count": 280
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 4625.89,
+            "median": 3310.0,
+            "count": 589
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 1688.21,
+            "median": 1335.0,
+            "count": 162
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 4082.98,
+            "median": 2330.0,
+            "count": 171
+          }
+        }
+      },
+      "vivara": {
+        "aneis": {
+          "prata": {
+            "avg_price": 481.67,
+            "median": 390.0,
+            "count": 12
+          },
+          "ouro": {
+            "avg_price": 10000.0,
+            "median": 3250.0,
+            "count": 5
+          },
+          "outros": {
+            "avg_price": 632.0,
+            "median": 313.0,
+            "count": 3
+          }
+        },
+        "brincos": {
+          "prata": {
+            "avg_price": 650.0,
+            "median": 300.0,
+            "count": 4
+          },
+          "ouro": {
+            "avg_price": 3225.0,
+            "median": 3225.0,
+            "count": 2
+          },
+          "outros": {
+            "avg_price": 280.0,
+            "median": 280.0,
+            "count": 1
+          }
+        },
+        "pulseiras": {
+          "ouro": {
+            "avg_price": 13440.0,
+            "median": 13440.0,
+            "count": 2
+          },
+          "prata": {
+            "avg_price": 596.67,
+            "median": 610.0,
+            "count": 3
+          }
+        },
+        "colares_pingentes": {
+          "prata": {
+            "avg_price": 532.0,
+            "median": 460.0,
+            "count": 5
+          },
+          "ouro": {
+            "avg_price": 33250.0,
+            "median": 33250.0,
+            "count": 1
+          }
+        },
+        "relogios": {
+          "outros": {
+            "avg_price": 3928.7,
+            "median": 3690.0,
+            "count": 10
+          },
+          "ouro": {
+            "avg_price": 3890.0,
+            "median": 3890.0,
+            "count": 1
+          }
+        }
+      }
+    }
   }
 ]
