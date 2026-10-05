@@ -18550,5 +18550,103 @@
         }
       }
     }
+  },
+  {
+    "date": "2026-10-05",
+    "brands": {
+      "monte_carlo": {
+        "aneis": {
+          "all": {
+            "avg_price": 3926.39,
+            "median": 2040.0,
+            "count": 322
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 4850.48,
+            "median": 3400.0,
+            "count": 585
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 1773.34,
+            "median": 1320.0,
+            "count": 165
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 3536.82,
+            "median": 1990.0,
+            "count": 173
+          }
+        }
+      },
+      "pandora": {},
+      "vivara": {
+        "brincos": {
+          "prata": {
+            "avg_price": 795.0,
+            "median": 585.0,
+            "count": 4
+          },
+          "ouro": {
+            "avg_price": 6150.0,
+            "median": 6150.0,
+            "count": 1
+          }
+        },
+        "aneis": {
+          "prata": {
+            "avg_price": 409.0,
+            "median": 225.0,
+            "count": 10
+          },
+          "ouro": {
+            "avg_price": 1745.0,
+            "median": 740.0,
+            "count": 6
+          }
+        },
+        "pulseiras": {
+          "ouro": {
+            "avg_price": 13440.0,
+            "median": 13440.0,
+            "count": 2
+          },
+          "prata": {
+            "avg_price": 610.0,
+            "median": 610.0,
+            "count": 2
+          }
+        },
+        "colares_pingentes": {
+          "prata": {
+            "avg_price": 592.73,
+            "median": 550.0,
+            "count": 11
+          },
+          "ouro": {
+            "avg_price": 11713.33,
+            "median": 1590.0,
+            "count": 3
+          }
+        },
+        "relogios": {
+          "outros": {
+            "avg_price": 4178.89,
+            "median": 4490.0,
+            "count": 9
+          },
+          "ouro": {
+            "avg_price": 6990.0,
+            "median": 6990.0,
+            "count": 1
+          }
+        }
+      }
+    }
   }
 ]
