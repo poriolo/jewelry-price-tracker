@@ -21511,5 +21511,98 @@
       },
       "pandora": {}
     }
+  },
+  {
+    "date": "2026-11-06",
+    "brands": {
+      "monte_carlo": {
+        "aneis": {
+          "all": {
+            "avg_price": 4407.07,
+            "median": 2170.0,
+            "count": 562
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 4101.47,
+            "median": 2890.0,
+            "count": 634
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 2434.33,
+            "median": 1210.0,
+            "count": 217
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 3055.02,
+            "median": 1990.0,
+            "count": 215
+          }
+        }
+      },
+      "vivara": {
+        "relogios": {
+          "outros": {
+            "avg_price": 3230.0,
+            "median": 990.0,
+            "count": 5
+          },
+          "ouro": {
+            "avg_price": 690.0,
+            "median": 690.0,
+            "count": 1
+          }
+        },
+        "aneis": {
+          "ouro": {
+            "avg_price": 635.0,
+            "median": 650.0,
+            "count": 4
+          },
+          "prata": {
+            "avg_price": 438.0,
+            "median": 300.0,
+            "count": 20
+          }
+        },
+        "pulseiras": {
+          "prata": {
+            "avg_price": 623.33,
+            "median": 590.0,
+            "count": 6
+          }
+        },
+        "colares_pingentes": {
+          "prata": {
+            "avg_price": 377.78,
+            "median": 250.0,
+            "count": 9
+          }
+        },
+        "brincos": {
+          "prata": {
+            "avg_price": 550.0,
+            "median": 550.0,
+            "count": 2
+          },
+          "ouro": {
+            "avg_price": 490.0,
+            "median": 490.0,
+            "count": 1
+          },
+          "outros": {
+            "avg_price": 290.0,
+            "median": 290.0,
+            "count": 1
+          }
+        }
+      },
+      "pandora": {}
+    }
   }
 ]
