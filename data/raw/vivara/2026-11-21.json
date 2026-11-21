@@ -1,0 +1,506 @@
+{
+  "brand": "vivara",
+  "scraped_at": "2026-11-21T14:08:14.887478+00:00",
+  "products": [
+    {
+      "id": "vivara-aneis-50706",
+      "name": "Anel Life Astro Gota em Prata 925 com Pedras Incolores",
+      "category": "aneis",
+      "price": 350.0,
+      "original_price": 350.0,
+      "url": "https://www.vivara.com.br/anel-life-astro-gota-em-prata-925-com-pedras-incolores-al00771100/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50492",
+      "name": "Brinco Life Pacific II em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas",
+      "category": "brincos",
+      "price": 650.0,
+      "original_price": 650.0,
+      "url": "https://www.vivara.com.br/brinco-life-pacific-prata-cravejado-bl00002081/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-51067",
+      "name": "Relógio Life Lovely Feminino Couro e Aço Vermelho",
+      "category": "relogios",
+      "price": 990.0,
+      "original_price": 990.0,
+      "url": "https://www.vivara.com.br/relogio-life-lovely-feminino-couro-e-aco-vermelho-li00000073/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50515",
+      "name": "Anel Life Pacific em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas",
+      "category": "aneis",
+      "price": 690.0,
+      "original_price": 690.0,
+      "url": "https://www.vivara.com.br/anel-life-pacific-prata-cravejado-al01016100/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-50496",
+      "name": "Colar Life Pacific em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas, 45cm",
+      "category": "colares_pingentes",
+      "price": 1090.0,
+      "original_price": 1090.0,
+      "url": "https://www.vivara.com.br/colar-life-pacific-prata-cravejado-cl00001861/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50493",
+      "name": "Brinco Life Pacific III em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas",
+      "category": "brincos",
+      "price": 1090.0,
+      "original_price": 1090.0,
+      "url": "https://www.vivara.com.br/brinco-life-pacific-prata-cravejado-bl00002079/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-50514",
+      "name": "Pulseira Life Pacific em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas",
+      "category": "pulseiras",
+      "price": 1590.0,
+      "original_price": 1590.0,
+      "url": "https://www.vivara.com.br/pulseira-life-pacific-em-prata-925-com-pedras-azuis-incolores-e-esferas-peroladas-pl00001774/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50516",
+      "name": "Anel Life Pacific em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas",
+      "category": "aneis",
+      "price": 890.0,
+      "original_price": 890.0,
+      "url": "https://www.vivara.com.br/anel-life-pacific-prata-cravejado-al01016200/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50728",
+      "name": "Anel Life Astro Gota em Prata 925 com Pedras Verdes",
+      "category": "aneis",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/anel-life-astro-gota-em-prata-925-com-pedras-verdes-al01021700/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-22844",
+      "name": "Anel Life Duplo Ondas em Prata 925",
+      "category": "aneis",
+      "price": 290.0,
+      "original_price": 290.0,
+      "url": "https://www.vivara.com.br/anel-life-ondas-duplo-prata-al00055600/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50720",
+      "name": "Anel Life Astro Gota em Prata 925 com Pedras Azuis",
+      "category": "aneis",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/anel-life-astro-gota-em-prata-925-com-pedras-azuis-al01021400/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-51310",
+      "name": "Argola Life Elegance em Prata 925 com Banho de Ouro Amarelo 18k, 20mm",
+      "category": "brincos",
+      "price": 990.0,
+      "original_price": 990.0,
+      "url": "https://www.vivara.com.br/brinco-argola-life-elegance-em-prata-925-com-banho-de-ouro-amarelo-18k-bl00002557/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-50723",
+      "name": "Colar Life Astro Gota em Prata 925 com Pedras Rosas, 45cm",
+      "category": "colares_pingentes",
+      "price": 950.0,
+      "original_price": 950.0,
+      "url": "https://www.vivara.com.br/colar-life-astro-gota-em-prata-925-com-pedras-rosas-cl00001906/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-45438",
+      "name": "Separador Life Ocean em Prata 925 com Pedras Rosas",
+      "category": "aneis",
+      "price": 320.0,
+      "original_price": 320.0,
+      "url": "https://www.vivara.com.br/separador-life-ocean-prata-cravejado-rosa-e-incolor-el00005991/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50729",
+      "name": "Anel Life Astro Gota em Prata 925 com Pedras Rosas",
+      "category": "aneis",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/anel-life-astro-gota-em-prata-925-com-pedras-rosas-al01021500/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-51006",
+      "name": "Brinco Life Elegance Relevo em Prata 925 com Banho de Ouro Amarelo 18k",
+      "category": "brincos",
+      "price": 790.0,
+      "original_price": 790.0,
+      "url": "https://www.vivara.com.br/brinco-life-elegance-relevo-em-prata-925-com-banho-de-ouro-amarelo-18k-bl00002551/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-relogios-51066",
+      "name": "Relógio Life Lovely Feminino Couro e Aço Verde",
+      "category": "relogios",
+      "price": 990.0,
+      "original_price": 990.0,
+      "url": "https://www.vivara.com.br/relogio-life-lovely-feminino-couro-e-aco-verde-li00000072/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-23072",
+      "name": "Brinco Life Cosmic Com Banho Ouro Amarelo",
+      "category": "brincos",
+      "price": 390.0,
+      "original_price": 390.0,
+      "url": "https://www.vivara.com.br/brinco-life-cosmic-com-banho-ouro-amarelo-bl00000658/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50962",
+      "name": "Anel Life Elegance Oval em Prata 925 com Banho de Ouro Amarelo 18k",
+      "category": "aneis",
+      "price": 690.0,
+      "original_price": 690.0,
+      "url": "https://www.vivara.com.br/anel-life-elegance-oval-em-prata-925-com-banho-de-ouro-amarelo-18k-al01028400/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50708",
+      "name": "Brinco Life Astro Gota em Prata 925 com Pedras Verdes",
+      "category": "brincos",
+      "price": 590.0,
+      "original_price": 590.0,
+      "url": "https://www.vivara.com.br/brinco-life-astro-gota-em-prata-925-com-pedras-verdes-bl00002266/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50954",
+      "name": "Brinco Life Splash em Prata 925 com Pedras Verdes e Incolores",
+      "category": "brincos",
+      "price": 850.0,
+      "original_price": 850.0,
+      "url": "https://www.vivara.com.br/brinco-life-splash-em-prata-925-com-pedras-verdes-e-incolores-bl00002145/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-49499",
+      "name": "Brinco Life Gota Prata Banho em Ouro Amarelo Cravejado",
+      "category": "brincos",
+      "price": 590.0,
+      "original_price": 590.0,
+      "url": "https://www.vivara.com.br/brinco-life-gota-prata-banho-em-ouro-amarelo-cravejado-bl00002203/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-55117",
+      "name": "Anel Life Trends Coração em Prata 925",
+      "category": "aneis",
+      "price": 290.0,
+      "original_price": 290.0,
+      "url": "https://www.vivara.com.br/anel-life-trends-coracao-em-prata-925-al09026900/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-50495",
+      "name": "Colar Life Pacific em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas, 43cm",
+      "category": "colares_pingentes",
+      "price": 2890.0,
+      "original_price": 2890.0,
+      "url": "https://www.vivara.com.br/colar-life-pacific-prata-cravejado-cl00001888/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-55120",
+      "name": "Anel Life Trends Lua em Prata 925",
+      "category": "aneis",
+      "price": 290.0,
+      "original_price": 290.0,
+      "url": "https://www.vivara.com.br/anel-life-trends-lua-em-prata-925-al09027200/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-55596",
+      "name": "Colar Life Folhas em Prata 925 com Banho de Ouro 18k e Pedras Incolores",
+      "category": "colares_pingentes",
+      "price": 1190.0,
+      "original_price": 1190.0,
+      "url": "https://www.vivara.com.br/colar-life-folhas-ii-em-prata-925-com-banho-de-ouro-18k-e-pedras-incolores-cl00002250/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-55521",
+      "name": "Anel Life Folhas em Prata 925 com Banho de Ouro Amarelo 18k",
+      "category": "aneis",
+      "price": 650.0,
+      "original_price": 650.0,
+      "url": "https://www.vivara.com.br/anel-life-folhas-ii-em-prata-925-com-banho-de-ouro-amarelo-18k-al09027600/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-22916",
+      "name": "Anel Life Pavê em Prata 925 com Pedras Rosas",
+      "category": "aneis",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/anel-life-pave-em-prata-925-com-pedras-rosas-al00085400/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50517",
+      "name": "Anel Life Pacific em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas",
+      "category": "aneis",
+      "price": 790.0,
+      "original_price": 790.0,
+      "url": "https://www.vivara.com.br/anel-life-pacific-prata-cravejado-al01016300/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50963",
+      "name": "Anel Life Elegance Relevo em Prata 925 com Banho de Ouro Amarelo 18k",
+      "category": "aneis",
+      "price": 690.0,
+      "original_price": 690.0,
+      "url": "https://www.vivara.com.br/anel-life-elegance-relevo-em-prata-925-com-banho-de-ouro-amarelo-18k-al01028500/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-51049",
+      "name": "Pulseira Life Elegance Gota em Prata 925",
+      "category": "pulseiras",
+      "price": 650.0,
+      "original_price": 650.0,
+      "url": "https://www.vivara.com.br/pulseira-life-elegance-gota-em-prata-925-pl00001923/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50864",
+      "name": "Anel Life Astro Estrela em Prata 925 com Pedras Azuis",
+      "category": "aneis",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/anel-life-astro-estrela-em-prata-925-com-pedras-azuis-al01021600/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-45081",
+      "name": "Anel Life Disney Minnie em Prata 925 com Pedras Incolores",
+      "category": "aneis",
+      "price": 590.0,
+      "original_price": 590.0,
+      "url": "https://www.vivara.com.br/anel-life-disney-minnie-prata-cravejado-al00707000/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50712",
+      "name": "Brinco Life Astro Gota em Prata 925 com Pedras Rosas",
+      "category": "brincos",
+      "price": 590.0,
+      "original_price": 590.0,
+      "url": "https://www.vivara.com.br/brinco-life-astro-gota-em-prata-925-com-pedras-rosas-bl00002267/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-51583",
+      "name": "Colar Life Elegance em Prata 925 com Banho de Ouro Amarelo 18k, 45cm",
+      "category": "colares_pingentes",
+      "price": 1390.0,
+      "original_price": 1390.0,
+      "url": "https://www.vivara.com.br/colar-life-elegance-em-prata-925-com-banho-de-ouro-amarelo-18k-45cm-cl00002055/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-24552",
+      "name": "Anel Life Olho Grego em Prata 925",
+      "category": "aneis",
+      "price": 250.0,
+      "original_price": 250.0,
+      "url": "https://www.vivara.com.br/anel-life-olho-grego-prata-al00060100/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-55118",
+      "name": "Anel Life Trends Borboleta em Prata 925",
+      "category": "aneis",
+      "price": 290.0,
+      "original_price": 290.0,
+      "url": "https://www.vivara.com.br/anel-life-trends-borboleta-em-prata-925-al09027000/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50952",
+      "name": "Anel Life Splash em Prata 925 com Pedras Verdes e Incolores",
+      "category": "aneis",
+      "price": 1090.0,
+      "original_price": 1090.0,
+      "url": "https://www.vivara.com.br/anel-life-splash-em-prata-925-com-pedras-verdes-e-incolores-al01021200/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-pulseiras-51610",
+      "name": "Pulseira Life Elegance em Prata 925 com Banho de Ouro Amarelo 18k",
+      "category": "pulseiras",
+      "price": 750.0,
+      "original_price": 750.0,
+      "url": "https://www.vivara.com.br/pulseira-life-elegance-em-prata-925-com-banho-de-ouro-amarelo-18k-pl00001953/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-53385",
+      "name": "Anel Life Místico Alma de Ondas em Prata 925 com Pedras Incolores",
+      "category": "aneis",
+      "price": 390.0,
+      "original_price": 390.0,
+      "url": "https://www.vivara.com.br/anel-mistico-alma-de-ondas-em-prata-925-com-pedras-incolores-al01026800/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-55130",
+      "name": "Brinco Life Trends Coração em Prata 925",
+      "category": "brincos",
+      "price": 390.0,
+      "original_price": 390.0,
+      "url": "https://www.vivara.com.br/brinco-life-trends-coracao-em-prata-925-bl00002933/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-26694",
+      "name": "Brinco Life Gota Azuis",
+      "category": "brincos",
+      "price": 490.0,
+      "original_price": 490.0,
+      "url": "https://www.vivara.com.br/brinco-life-gota-azuis-bl00000398/p",
+      "material": null,
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-51052",
+      "name": "Bracelete Life Elegance em Prata 925 com Banho de Ouro Amarelo 18k",
+      "category": "aneis",
+      "price": 1690.0,
+      "original_price": 1690.0,
+      "url": "https://www.vivara.com.br/bracelete-life-elegance-em-prata-925-com-banho-de-ouro-amarelo-18k-pl00001928/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50702",
+      "name": "Anel Life Astro Estrela em Prata 925 com Pedras Incolores",
+      "category": "aneis",
+      "price": 450.0,
+      "original_price": 450.0,
+      "url": "https://www.vivara.com.br/anel-life-astro-estrela-em-prata-925-com-pedras-incolores-al00771200/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50711",
+      "name": "Brinco Life Astro Gota em Prata 925 com Pedras Azuis",
+      "category": "brincos",
+      "price": 590.0,
+      "original_price": 590.0,
+      "url": "https://www.vivara.com.br/brinco-life-astro-gota-em-prata-925-com-pedras-azuis-bl00002268/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-colares_pingentes-55530",
+      "name": "Colar Life Folhas em Prata 925 com Banho de Ouro 18k e Pedras Incolores",
+      "category": "colares_pingentes",
+      "price": 1390.0,
+      "original_price": 1390.0,
+      "url": "https://www.vivara.com.br/colar-life-folhas-ii-em-prata-925-com-banho-de-ouro-18k-e-pedras-incolores-cl00002249/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-aneis-50736",
+      "name": "Anel Life Special II em Prata 925 com Pedras Verdes e Incolores",
+      "category": "aneis",
+      "price": 650.0,
+      "original_price": 650.0,
+      "url": "https://www.vivara.com.br/anel-life-special-iii-em-prata-925-com-cristal-verde-e-pedras-incolores-al01016900/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-23069",
+      "name": "Brinco Life Cosmic Com Banho Ouro Amarelo",
+      "category": "brincos",
+      "price": 650.0,
+      "original_price": 650.0,
+      "url": "https://www.vivara.com.br/brinco-life-cosmic-com-banho-ouro-amarelo-bl00000657/p",
+      "material": "ouro",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-55133",
+      "name": "Brinco Life Trends Borboleta em Prata 925",
+      "category": "brincos",
+      "price": 390.0,
+      "original_price": 390.0,
+      "url": "https://www.vivara.com.br/brinco-life-trends-borboleta-em-prata-925-bl00002936/p",
+      "material": "prata",
+      "in_stock": true
+    },
+    {
+      "id": "vivara-brincos-50489",
+      "name": "Brinco Life Pacific I em Prata 925 com Pedras Azuis, Incolores e Esferas Peroladas",
+      "category": "brincos",
+      "price": 890.0,
+      "original_price": 890.0,
+      "url": "https://www.vivara.com.br/brinco-life-pacific-prata-cravejado-bl00002080/p",
+      "material": "prata",
+      "in_stock": true
+    }
+  ]
+}
