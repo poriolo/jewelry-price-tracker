@@ -23120,5 +23120,108 @@
         }
       }
     }
+  },
+  {
+    "date": "2026-11-24",
+    "brands": {
+      "pandora": {},
+      "vivara": {
+        "aneis": {
+          "prata": {
+            "avg_price": 506.32,
+            "median": 450.0,
+            "count": 19
+          },
+          "ouro": {
+            "avg_price": 930.0,
+            "median": 690.0,
+            "count": 4
+          },
+          "outros": {
+            "avg_price": 450.0,
+            "median": 450.0,
+            "count": 1
+          }
+        },
+        "brincos": {
+          "prata": {
+            "avg_price": 680.0,
+            "median": 620.0,
+            "count": 8
+          },
+          "ouro": {
+            "avg_price": 682.0,
+            "median": 650.0,
+            "count": 5
+          },
+          "outros": {
+            "avg_price": 490.0,
+            "median": 490.0,
+            "count": 1
+          }
+        },
+        "relogios": {
+          "ouro": {
+            "avg_price": 990.0,
+            "median": 990.0,
+            "count": 2
+          }
+        },
+        "colares_pingentes": {
+          "prata": {
+            "avg_price": 1630.0,
+            "median": 1340.0,
+            "count": 4
+          },
+          "ouro": {
+            "avg_price": 1323.33,
+            "median": 1390.0,
+            "count": 3
+          }
+        },
+        "pulseiras": {
+          "prata": {
+            "avg_price": 1120.0,
+            "median": 1120.0,
+            "count": 2
+          },
+          "ouro": {
+            "avg_price": 750.0,
+            "median": 750.0,
+            "count": 1
+          }
+        }
+      },
+      "monte_carlo": {
+        "aneis": {
+          "all": {
+            "avg_price": 4476.18,
+            "median": 2690.0,
+            "count": 612
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 3965.19,
+            "median": 2490.0,
+            "count": 588
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 1416.15,
+            "median": 1020.0,
+            "count": 168
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 2487.88,
+            "median": 960.0,
+            "count": 170
+          }
+        }
+      }
+    }
   }
 ]
