@@ -23326,5 +23326,98 @@
         }
       }
     }
+  },
+  {
+    "date": "2026-11-26",
+    "brands": {
+      "pandora": {},
+      "vivara": {
+        "aneis": {
+          "prata": {
+            "avg_price": 523.16,
+            "median": 450.0,
+            "count": 19
+          },
+          "ouro": {
+            "avg_price": 930.0,
+            "median": 690.0,
+            "count": 4
+          },
+          "outros": {
+            "avg_price": 450.0,
+            "median": 450.0,
+            "count": 2
+          }
+        },
+        "brincos": {
+          "prata": {
+            "avg_price": 603.33,
+            "median": 590.0,
+            "count": 9
+          },
+          "ouro": {
+            "avg_price": 693.33,
+            "median": 700.0,
+            "count": 6
+          }
+        },
+        "relogios": {
+          "ouro": {
+            "avg_price": 990.0,
+            "median": 990.0,
+            "count": 2
+          }
+        },
+        "pulseiras": {
+          "prata": {
+            "avg_price": 1120.0,
+            "median": 1120.0,
+            "count": 2
+          }
+        },
+        "colares_pingentes": {
+          "prata": {
+            "avg_price": 1810.0,
+            "median": 1590.0,
+            "count": 3
+          },
+          "ouro": {
+            "avg_price": 1323.33,
+            "median": 1390.0,
+            "count": 3
+          }
+        }
+      },
+      "monte_carlo": {
+        "aneis": {
+          "all": {
+            "avg_price": 4463.6,
+            "median": 2690.0,
+            "count": 612
+          }
+        },
+        "brincos": {
+          "all": {
+            "avg_price": 3945.68,
+            "median": 2490.0,
+            "count": 588
+          }
+        },
+        "colares": {
+          "all": {
+            "avg_price": 1398.89,
+            "median": 1020.0,
+            "count": 168
+          }
+        },
+        "pulseiras": {
+          "all": {
+            "avg_price": 3338.26,
+            "median": 1990.0,
+            "count": 219
+          }
+        }
+      }
+    }
   }
 ]
